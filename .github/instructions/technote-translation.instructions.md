@@ -210,7 +210,8 @@ CoreText, preserves protected pixels, and records replay/masks under `figures/lo
 Exit code 2 means a reported figure is blocked by a fit problem; it does not silently substitute an English
 image. Figure 07's full Japanese filter label crosses its red annotation at the source scale, so leave that
 figure unchanged until the editor approves an annotation or wording adjustment. Draft images do not become
-PDF replacements until their visual review is approved.
+PDF replacements until their visual review is approved. The editor approved figures 06, 08 and 09;
+their layouts now enable those replacements. Figure 07 is still unchanged pending the annotation decision.
 
 ## Reassembly (`tools/build.py`)
 

@@ -41,8 +41,8 @@
       "source_locale": "en",
       "source_theme": "dark",
       "source_display_scale": null,
-      "rendering_status": "blocked_pending_font_geometry_confirmation",
-      "replacement_enabled": false,
+      "rendering_status": "labels_only_font_geometry_not_assessed",
+      "replacement_enabled": true,
       "labels": [
         {
           "line": 1,
@@ -313,7 +313,7 @@
       "source_locale": "en",
       "source_theme": "dark",
       "source_display_scale": null,
-      "rendering_status": "blocked_pending_font_geometry_confirmation",
+      "rendering_status": "labels_only_font_geometry_not_assessed",
       "replacement_enabled": false,
       "labels": [
         {
@@ -585,8 +585,8 @@
       "source_locale": "en",
       "source_theme": "dark",
       "source_display_scale": null,
-      "rendering_status": "blocked_pending_font_geometry_confirmation",
-      "replacement_enabled": false,
+      "rendering_status": "labels_only_font_geometry_not_assessed",
+      "replacement_enabled": true,
       "labels": [
         {
           "line": 1,
@@ -857,8 +857,8 @@
       "source_locale": "en",
       "source_theme": "dark",
       "source_display_scale": null,
-      "rendering_status": "blocked_pending_font_geometry_confirmation",
-      "replacement_enabled": false,
+      "rendering_status": "labels_only_font_geometry_not_assessed",
+      "replacement_enabled": true,
       "labels": [
         {
           "line": 1,

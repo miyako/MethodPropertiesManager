@@ -29,8 +29,9 @@ class ScreenshotLabelsTest(unittest.TestCase):
                 for source, target in zip(original, translated):
                     if source.startswith("Method") and source != "Method Properties Manager" and source != "Methods":
                         self.assertEqual(source, target)
-                self.assertFalse(report["replacement_enabled"])
-                self.assertEqual(report["rendering_status"], "blocked_pending_font_geometry_confirmation")
+                layout = json.loads((self.root / f"figures/layout/fig-{number:02}.json").read_text())
+                self.assertEqual(report["replacement_enabled"], bool(layout.get("replace")))
+                self.assertEqual(report["rendering_status"], "labels_only_font_geometry_not_assessed")
                 image = self.root / f"figures/fig-{number:02}.png"
                 self.assertEqual(report["original_sha256"], hashlib.sha256(image.read_bytes()).hexdigest())
                 for item in report["labels"]:
@@ -59,6 +60,17 @@ class ScreenshotLabelsTest(unittest.TestCase):
             text = (root / "figures/fig-06.en.txt").read_text().replace("Any", "Unknown label", 1)
             (root / "figures/fig-06.en.txt").write_text(text)
             with self.assertRaisesRegex(ValueError, "Unresolved screenshot label"):
+                labels.prepare_figure(6, root, self.units, self.objects)
+
+    def test_unexpected_replacement_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "figures/layout").mkdir(parents=True)
+            shutil.copy2(self.root / "figures/fig-06.en.txt", root / "figures/fig-06.en.txt")
+            layout = json.loads((self.root / "figures/layout/fig-06.json").read_text())
+            layout["replace"] = "unreviewed.png"
+            (root / "figures/layout/fig-06.json").write_text(json.dumps(layout))
+            with self.assertRaisesRegex(ValueError, "Unexpected screenshot replacement"):
                 labels.prepare_figure(6, root, self.units, self.objects)
 
     def test_existing_editor_changes_are_never_overwritten(self):

@@ -1,5 +1,5 @@
 {
-  "status": "hiragino_sans_trial_not_enabled_in_pdf",
+  "status": "approved_hiragino_replacements_enabled",
   "editor_font_direction": "try Hiragino Sans",
   "historical_native_rendering": "not claimed; source OS/build remains unknown",
   "pixel_scale": "trial sizes use declared 4D point sizes times two",
@@ -34,7 +34,7 @@
   "figures": [
     {
       "figure": "fig-06",
-      "status": "editor_requested_font_trial_requires_visual_review",
+      "status": "editor_approved_replacement",
       "original_sha256": "081b314fa6e8138b92540e65fabeeb7a7901e89ee3497a514431b64af17edc76",
       "dimensions_px": [
         1754,
@@ -42,7 +42,7 @@
       ],
       "changed_pixels": 34948,
       "unexpected_changes": 0,
-      "replacement_enabled": false,
+      "replacement_enabled": true,
       "labels": [
         {
           "resname": "MPM_WindowTitle",
@@ -527,7 +527,7 @@
     },
     {
       "figure": "fig-08",
-      "status": "editor_requested_font_trial_requires_visual_review",
+      "status": "editor_approved_replacement",
       "original_sha256": "e9e5faae0255568d2893415d130ae35a55bbce4ad92c2d4620de47235256c489",
       "dimensions_px": [
         1754,
@@ -535,7 +535,7 @@
       ],
       "changed_pixels": 34948,
       "unexpected_changes": 0,
-      "replacement_enabled": false,
+      "replacement_enabled": true,
       "labels": [
         {
           "resname": "MPM_WindowTitle",
@@ -1020,7 +1020,7 @@
     },
     {
       "figure": "fig-09",
-      "status": "editor_requested_font_trial_requires_visual_review",
+      "status": "editor_approved_replacement",
       "original_sha256": "855321eb5bb104ea3387d4bcb07dca91a1c74e5d1ea1c6c91799f58af28a8728",
       "dimensions_px": [
         1754,
@@ -1028,7 +1028,7 @@
       ],
       "changed_pixels": 39281,
       "unexpected_changes": 0,
-      "replacement_enabled": false,
+      "replacement_enabled": true,
       "labels": [
         {
           "resname": "MPM_WindowTitle",

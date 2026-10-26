@@ -210,6 +210,10 @@ def changed_pixels(original, candidate):
 
 def render_figure(prepared, paths):
     stem = prepared["figure"]
+    layout = json.loads((ROOT / f"figures/layout/{stem}.json").read_text())
+    if layout.get("localize") is not False or layout.get("replace") not in (None, f"{stem}-ja.png"):
+        raise ValueError(f"Unexpected screenshot replacement configuration: {stem}")
+    enabled = layout.get("replace") == f"{stem}-ja.png"
     source = ROOT / f"figures/{stem}.png"
     if hashlib.sha256(source.read_bytes()).hexdigest() != prepared["original_sha256"]:
         raise ValueError(f"Original screenshot changed: {source}")
@@ -270,10 +274,11 @@ def render_figure(prepared, paths):
     if ImageChops.multiply(changed, protected).getbbox():
         raise ValueError(f"Example values, annotations or controls changed: {stem}")
     return canvas, erase_mask, draw_mask, {
-        "figure": stem, "status": "editor_requested_font_trial_requires_visual_review",
+        "figure": stem,
+        "status": "editor_approved_replacement" if enabled else "editor_requested_font_trial_requires_visual_review",
         "original_sha256": prepared["original_sha256"], "dimensions_px": original.size,
         "changed_pixels": changed.histogram()[255], "unexpected_changes": 0,
-        "replacement_enabled": False, "labels": records,
+        "replacement_enabled": enabled, "labels": records,
     }
 
 
@@ -336,7 +341,11 @@ def main():
             report["masks"][kind] = str(path)
         completed.append(report)
     report = {
-        "status": "hiragino_sans_trial_not_enabled_in_pdf",
+        "status": (
+            "approved_hiragino_replacements_enabled"
+            if completed and all(item["replacement_enabled"] for item in completed)
+            else "hiragino_sans_replacements_not_all_enabled"
+        ),
         "editor_font_direction": "try Hiragino Sans",
         "historical_native_rendering": "not claimed; source OS/build remains unknown",
         "pixel_scale": "trial sizes use declared 4D point sizes times two",

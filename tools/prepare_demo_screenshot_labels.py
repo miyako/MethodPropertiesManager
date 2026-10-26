@@ -69,8 +69,8 @@ def prepare_figure(number, root, units, objects):
     layout = json.loads((root / f"figures/layout/{stem}.json").read_text())
     if len(lines) != len(layout["items"]):
         raise ValueError(f"OCR text/layout misalignment: {stem}")
-    if layout.get("localize") is not False or layout.get("replace"):
-        raise ValueError(f"Expected an unchanged screenshot layout: {stem}")
+    if layout.get("localize") is not False or layout.get("replace") not in (None, f"{stem}-ja.png"):
+        raise ValueError(f"Unexpected screenshot replacement configuration: {stem}")
     source_index = {units[key][0]: key for key in CONTROLS if key != "MPM_EditLabel"}
     edit_first = [i for i, line in enumerate(lines) if line.startswith("Edit this property")]
     edit_last = [i for i, line in enumerate(lines) if line == "to select multiple methods):"]
@@ -143,8 +143,8 @@ def prepare_figure(number, root, units, objects):
         "source_locale": "en",
         "source_theme": "dark",
         "source_display_scale": None,
-        "rendering_status": "blocked_pending_font_geometry_confirmation",
-        "replacement_enabled": False,
+        "rendering_status": "labels_only_font_geometry_not_assessed",
+        "replacement_enabled": bool(layout.get("replace")),
         "labels": labels,
     }
 
