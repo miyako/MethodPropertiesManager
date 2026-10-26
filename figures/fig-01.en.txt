@@ -1,0 +1,16 @@
+Method Properties
+Name:
+Invisible
+Shared by components and host project
+Execute on Server
+Only used in compiled projects
+Execution mode:
+Can be run in preemptive processes
+Cannot be run in preemptive processes
+Indifferent
+Available through:
+Web Services
+Published in WSDL
+4D tags and URLs (4DACTION...)
+SQL
+Cancel

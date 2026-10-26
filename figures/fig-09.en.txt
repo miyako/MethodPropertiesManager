@@ -1,0 +1,17 @@
+Method Properties Manager
+Methods
+Show methods with this property:
+Method1
+Any
+Method2
+Method3
+Method4
+Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac
+Method5
+to select multiple methods):
+Preemptive
+Capable
+Incapable
+Indifferent
+Count:
+Close

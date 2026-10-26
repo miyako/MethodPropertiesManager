@@ -1,0 +1,5 @@
+//%attributes = {"preemptive":"indifferent","invisible":true,"publishedWeb":true,"publishedWsdl":true}
+C_TEXT($1)
+ARRAY TEXT($FolderList; 0)
+ARRAY TEXT($DocumentList; 0)
+C_LONGINT($platform; $i)

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="MethodPropertiesManager" uuid="3F7C88DD2C07430785FB5591192BBCC9" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Example" uuid="22350D8EF2CC458D95BF28B230F3611B" id="1">
+		<field name="ID" uuid="61D027FE44D948028A57624EBF48418E" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="data" uuid="31A7DF003C244D06A46B1154BDD7384B" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="ID" field_uuid="61D027FE44D948028A57624EBF48418E"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="A01C0C61D50E457DAFA1D6A44F8B0C73" type="7">
+		<field_ref uuid="61D027FE44D948028A57624EBF48418E" name="ID">
+			<table_ref uuid="22350D8EF2CC458D95BF28B230F3611B" name="Example"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

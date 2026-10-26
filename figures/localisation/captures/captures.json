@@ -1,0 +1,46 @@
+{
+  "authority": "Native Japanese 4D screenshots supplied by the editor on 2026-10-26",
+  "editor_approval": "images are good. I also give you these",
+  "application_build": null,
+  "os_version": null,
+  "fonts": "Native UI as captured; no replacement fonts or painted labels",
+  "captures": [
+    {
+      "figure": "fig-02",
+      "attachment": "89861c59-16c1-41a6-940b-a374e8299cfc-スクリーンショット 2026-10-26 16.05.18.png",
+      "capture": "figures/fig-02-ja.png",
+      "capture_sha256": "d5c9c648b65f29b848278c02328d4be11f87b9bf6ac13818c3c1324ad03421fb",
+      "capture_dimensions_px": [1292, 1124],
+      "original_sha256": "54f46774a26d21aabedb015d06de1db8ebe270c7872dcd686a75880a0780431c",
+      "original_dimensions_px": [1047, 908],
+      "output": "figures/fig-02-ja.png",
+      "output_sha256": "d5c9c648b65f29b848278c02328d4be11f87b9bf6ac13818c3c1324ad03421fb",
+      "output_dimensions_px": [1292, 1124],
+      "mode": "RGBA",
+      "width_pt": 342.9,
+      "crop": null,
+      "transformation": "None. The supplied PNG is used byte-for-byte, including its native menu geometry, highlighted Properties command, current project/method names, code preview, Documentation tab and metadata.",
+      "native_wording": "The supplied Documentation tab reads ドキュメント. Do not repaint it with the longer historical 4D 20.8 resource candidate.",
+      "framing": "Editor-supplied current-project view replaces the historical English view. Different pixel dimensions and visible method names are native capture state, not translated or invented data."
+    },
+    {
+      "figure": "fig-03",
+      "attachment": "0f43a956-771a-47e3-851d-1f0a1f5f37dd-スクリーンショット 2026-10-26 16.05.33.png",
+      "capture": "figures/localisation/captures/fig-03-native.png",
+      "capture_sha256": "83405fdb4baf6413e4d94fa11b66857aa2488b563cfafc871bccc348d72a2edd",
+      "capture_dimensions_px": [1210, 836],
+      "original_sha256": "c8fa5b8f78b91d3d9b05dccce92079cce114b7fba5c3359f390472ba10682b6d",
+      "original_dimensions_px": [928, 136],
+      "output": "figures/fig-03-ja.png",
+      "output_sha256": "6c974d14cab21e6d25ab27dbd1d21ba54aeae505b16467a93b2ad63a8d619dd9",
+      "output_dimensions_px": [1210, 122],
+      "mode": "RGBA",
+      "width_pt": 317.0,
+      "crop": [0, 122, 1210, 244],
+      "transformation": "Pixel-exact crop of the native toolbar and first declaration, matching the original figure's subject. No resizing, painting, annotations or code translation.",
+      "code": "C_COLLECTION(update_display; $0)",
+      "metadata": "Preserve RGBA, sRGB rendering intent and DPI; omit non-rendering EXIF/XMP from the cropped output. The complete original capture retains all metadata.",
+      "framing": "Omit window title/tabs, subsequent declarations, blank editor area and status bar. Preserve the complete toolbar and first declaration at native pixel resolution."
+    }
+  ]
+}

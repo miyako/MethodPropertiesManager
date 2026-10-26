@@ -1,0 +1,42 @@
+
+method_properties_manager - Explorer
+Methods
+Project Methods
+
+1
+Home
+2
+C_TEXT(update_display; $1
+count_f
+Edit
+C_COLLECTION(update_displ
+Method
+Edit Properties...
+Tables
+Method
+Edit Documentation...
+Method
+New Method...
+update
+Forms
+New Class...
+Component
+Database Me
+Duplicate
+Classes
+Methods
+Rename...
+Triggers
+Project Form
+Move to Trash
+Table Form M
+Commands
+Run Method
+4D Mobile M:
+
+Search Callers
+Search Dependencies
+Constants
+Plug-ins
+Trash
+Documentation

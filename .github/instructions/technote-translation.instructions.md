@@ -108,6 +108,7 @@ monospace font for code instead of colours, `code.colors` can stay empty.
 ## Translation conventions
 
 - Translate paragraph by paragraph, keeping Markdown structure and order.
+- Keep body blocks aligned; editor-approved cover metadata changes do not require changing the English source.
 - Translate captions but keep `fig-NN`. Keep the fences of code blocks exactly as they are, language tag included.
 - Japanese:
   - です・ます調.
@@ -115,7 +116,14 @@ monospace font for code instead of colours, `code.colors` can stay empty.
   - Full-width `（）` and `：` in prose.
   - Use the official 4D Japanese documentation terms (e.g. Webエリア, エンティティセレクション, データストア, 引数,
     メソッド, フォーム, コレクション) and record them in `glossary.md` (`| English | 日本語 | Notes |`).
-  - First occurrence of a technical term: 日本語（English）.
+  - Do not automatically append English equivalents to technical terms. Include English only when necessary to
+    disambiguate; preserve identifiers and quoted UI labels that must match the current application.
+  - Use the editor-approved Japanese title in the cover and prose. This edition's cover byline is
+    `Elliott Jensen（4D Inc. テクニカルサービスエンジニア）`; omit `テクニカルノート24-12` from the cover.
+  - Use `シングルユーザー版` for standalone and `メソッドエディター` for Code Editor in narrative text.
+  - Prefer the verified equivalent Japanese page on `developer.4d.com` to legacy `doc.4d.com` documentation links.
+    For this note, use `/docs/ja/commands/method-get-attribute` and `/docs/ja/commands/method-set-attribute`.
+    Do not invent URL migrations or modify source-language references or program code.
 - Other languages: agree on the style with the user, and set the fonts (`figure_fonts`) and the font stack in
   `style/style.css`.
 - Inline code (`` `name` ``) stays as is. Identifiers in prose that refer to code stay in their original form.
@@ -181,6 +189,69 @@ submodule is updated. Reusable procedures belong in that skill, not in this refe
   confirmation or a localised screenshot, and leave the result explicitly unverified.
 - Review replacements on contact sheets and at native resolution, then spot-check the rebuilt PDF. Keep
   checkpoint 4: mechanical translation does not remove editorial approval.
+
+For this note's demo screenshots (06–09), prepare line-aligned labels and provenance with:
+
+```sh
+.venv/bin/python tools/prepare_demo_screenshot_labels.py \
+  --app "/Applications/4D 20.8/4D.app" --write-new \
+  --output figures/localisation/demo-labels.json
+```
+
+This reads the approved demo XLIFF and 4D's `CommonClose`, preserves method identifiers, and refuses to overwrite
+edited target files. It does not render images or enable replacements. The provenance records declared fonts
+separately from unresolved Japanese fallback and historical native title rendering; those gates remain open.
+Keep program code and identifiers untranslated. Figure 10 stays unchanged; figure 03 now uses an
+editor-supplied native capture crop as documented below. Originals always remain untouched.
+
+The editor requested a Hiragino Sans trial. Render it with
+`.venv/bin/python tools/render_demo_screenshots.py --write-new`, then
+`make review-draft FIGS="06 07 08 09"`. The renderer verifies local W3/W6 faces and glyph coverage through
+CoreText, preserves protected pixels, and records replay/masks under `figures/localisation/hiragino/`.
+Exit code 2 means a reported figure is blocked by a fit problem; it does not silently substitute an English
+image. Draft images do not become PDF replacements until their visual review is approved.
+The editor approved the Hiragino Sans replacements and widening figure 07's highlight. All four demo
+screenshots (06–09) are enabled. The approved annotation override extends figure 07's right edge by 100px,
+copying its original rounded corners and repeating straight-stroke pixels without resizing any UI.
+Its erasure/draw masks include the explicitly approved annotation change; other protected pixels stay intact.
+
+For native dialogs 01, 04 and 05, the editor authorised 4D 20.8 Japanese resources and Hiragino Sans review
+approximations. Their replacements are included in the review PDF; the editor approved them with
+“images are good” on 2026-10-26.
+They are **not** historical native captures: the source 4D/macOS build and scale remain unknown.
+Replay the task-specific renderer without overwriting edited artifacts:
+
+```sh
+.venv/bin/python tools/render_native_screenshots.py --write-new
+make review-draft FIGS="01 04 05"
+```
+
+The minimal resource/context mappings, exact glyph masks, font evidence and replay hashes are in
+`figures/localisation/native-hiragino/`. The renderer checks line-aligned labels against the actual full 4D
+resources. It preserves source ICC profiles/DPI, method names, the `@` input and Boolean values.
+Native text restoration accounts for antialiasing/shadows; figure 05's dithered toolbar uses an adjacent
+untouched row-gradient strip only under the source glyphs and a one-pixel halo, recorded separately.
+Japanese explanatory text uses upright Hiragino Sans W3, not synthetic Latin italics.
+
+The former figure 02 fit problem is resolved by the editor's **native Japanese captures**, supplied on
+2026-10-26. `figures/localisation/captures/captures.json` records their hashes, provenance and framing:
+
+- Figure 02 uses the supplied Explorer PNG byte-for-byte, including its actual menu geometry, highlighted
+  Properties command, current project/method names and native `ドキュメント` tab. It is not a repaint using
+  the longer historical 4D 20.8 resource candidate. Its dimensions are 1292×1124 rather than 1047×908;
+  the original PDF placement width stays 342.9pt.
+- Figure 03 crops the supplied method-editor capture to `[0, 122, 1210, 244]`: the toolbar and first declaration,
+  matching the subject of the original cropped figure. The crop is pixel-exact, with no rescaling or code
+  painting. The complete native capture is retained as `figures/localisation/captures/fig-03-native.png`.
+  RGBA, sRGB intent and DPI are preserved; non-rendering EXIF/XMP are omitted only from the crop.
+
+The native captures' exact application/OS builds and fonts are not assumed to be those of the local 4D 20.8
+installation. Their changed window state is supplied by the editor, not generated data. No red annotations
+are added. Figure 10 and all English original images remain untouched.
+
+The native renderer now validates both captures and the exact crop replay and exits successfully with zero
+blocked figures. The old English menu/tab fit measurements remain under `mechanical_fit_diagnostic` for
+provenance only; they are not active blockers. Keep checkpoint 4 for review of the updated PDF.
 
 ## Reassembly (`tools/build.py`)
 

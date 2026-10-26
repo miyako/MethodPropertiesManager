@@ -1,0 +1,27 @@
+{
+ "source": "fig-03.png",
+ "page": 4,
+ "width_pt": 317.0,
+ "localize": false,
+ "replace": "fig-03-ja.png",
+ "items": [
+  {
+   "box": [
+    242,
+    50,
+    88,
+    51
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    150,
+    110,
+    563,
+    26
+   ],
+   "align": "center"
+  }
+ ]
+}

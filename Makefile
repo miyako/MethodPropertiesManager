@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: all setup inspect extract check figures review pdf demo-zip release-assets clean
+.PHONY: all setup inspect extract check figures review review-draft pdf demo-zip release-assets clean
 
 all: pdf
 
@@ -31,6 +31,9 @@ figures: setup
 # Contact sheets of the localised figures (build/contact-N.png). FIGS="02 04" to select.
 review: figures
 	$(PY) tools/contact_sheet.py --compare $(FIGS)
+
+review-draft: setup
+	$(PY) tools/contact_sheet.py --compare --draft $(FIGS)
 
 # check + figures + two-pass PDF build.
 pdf: setup

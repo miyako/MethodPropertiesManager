@@ -1,0 +1,2 @@
+
+C_COLLECTION(update_display; $0)

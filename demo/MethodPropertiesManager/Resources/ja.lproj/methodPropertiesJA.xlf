@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="methodProperties" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="MPM_WindowTitle" resname="MPM_WindowTitle">
+        <source>Method Properties Manager</source>
+        <target>メソッドプロパティマネージャー</target>
+      </trans-unit>
+      <trans-unit id="MPM_FilterLabel" resname="MPM_FilterLabel">
+        <source>Show methods with this property:</source>
+        <target>次のプロパティを持つメソッドを表示：</target>
+      </trans-unit>
+      <trans-unit id="MPM_EditLabel" resname="MPM_EditLabel">
+        <source>Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac to select multiple methods):</source>
+        <target>選択したメソッドのプロパティを編集：&#13;複数選択はWindowsではCtrlキー、MacではCmdキー</target>
+      </trans-unit>
+      <trans-unit id="MPM_Methods" resname="MPM_Methods">
+        <source>Methods</source>
+        <target>メソッド</target>
+      </trans-unit>
+      <trans-unit id="MPM_Count" resname="MPM_Count">
+        <source>Count:</source>
+        <target>メソッド数：</target>
+      </trans-unit>
+      <trans-unit id="MPM_Apply" resname="MPM_Apply">
+        <source>Apply</source>
+        <target>適用</target>
+      </trans-unit>
+      <trans-unit id="MPM_Remove" resname="MPM_Remove">
+        <source>Remove</source>
+        <target>解除</target>
+      </trans-unit>
+      <trans-unit id="MPM_Capable" resname="MPM_Capable">
+        <source>Capable</source>
+        <target>実行可</target>
+      </trans-unit>
+      <trans-unit id="MPM_Incapable" resname="MPM_Incapable">
+        <source>Incapable</source>
+        <target>実行不可</target>
+      </trans-unit>
+      <trans-unit id="MPM_Indifferent" resname="MPM_Indifferent">
+        <source>Indifferent</source>
+        <target>指定なし</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoiceAny" resname="MPM_ChoiceAny">
+        <source>Any</source>
+        <target>すべて</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoiceInvisible" resname="MPM_ChoiceInvisible">
+        <source>Invisible</source>
+        <target>非表示</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoiceShared" resname="MPM_ChoiceShared">
+        <source>Shared</source>
+        <target>共有</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePublishedWeb" resname="MPM_ChoicePublishedWeb">
+        <source>Published Web</source>
+        <target>Web公開</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoiceExecutedonServer" resname="MPM_ChoiceExecutedonServer">
+        <source>Executed on Server</source>
+        <target>サーバー上で実行</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePreemptiveCapable" resname="MPM_ChoicePreemptiveCapable">
+        <source>Preemptive Capable</source>
+        <target>プリエンプティブ実行：可</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePreemptiveIncapable" resname="MPM_ChoicePreemptiveIncapable">
+        <source>Preemptive Incapable</source>
+        <target>プリエンプティブ実行：不可</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePreemptiveIndifferent" resname="MPM_ChoicePreemptiveIndifferent">
+        <source>Preemptive Indifferent</source>
+        <target>プリエンプティブ実行：指定なし</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePreemptive" resname="MPM_ChoicePreemptive">
+        <source>Preemptive</source>
+        <target>プリエンプティブ実行</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePublishedSOAP" resname="MPM_ChoicePublishedSOAP">
+        <source>Published SOAP</source>
+        <target>SOAP公開</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePublishedWSDL" resname="MPM_ChoicePublishedWSDL">
+        <source>Published WSDL</source>
+        <target>WSDL公開</target>
+      </trans-unit>
+      <trans-unit id="MPM_ChoicePublishedSQL" resname="MPM_ChoicePublishedSQL">
+        <source>Published SQL</source>
+        <target>SQL公開</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
