@@ -35,7 +35,8 @@
 					"dataSourceTypeHint": "object",
 					"method": "ObjectMethods/Popup Dropdown List.4dm",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"Popup Dropdown List1": {
 					"type": "dropdown",
@@ -51,7 +52,8 @@
 					"dataSourceTypeHint": "object",
 					"method": "ObjectMethods/Popup Dropdown List1.4dm",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"Text1": {
 					"type": "text",
@@ -85,7 +87,8 @@
 					],
 					"method": "ObjectMethods/apply_button.4dm",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"Button2": {
 					"type": "button",
@@ -116,7 +119,7 @@
 					"dataSource": "Form:C1466.method_names",
 					"selectedItemsSource": "Form:C1466.selected_methods",
 					"showHeaders": true,
-					"focusable": false,
+					"focusable": true,
 					"scrollbarHorizontal": "hidden",
 					"scrollbarVertical": "hidden",
 					"method": "ObjectMethods/List Box.4dm",
@@ -157,7 +160,8 @@
 					],
 					"method": "ObjectMethods/remove_button.4dm",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"capable_button": {
 					"type": "button",
@@ -172,7 +176,8 @@
 					"method": "ObjectMethods/capable_button.4dm",
 					"visibility": "visible",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"incapable_button": {
 					"type": "button",
@@ -187,7 +192,8 @@
 					"method": "ObjectMethods/incapable_button.4dm",
 					"visibility": "visible",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"indifferent_button": {
 					"type": "button",
@@ -202,7 +208,8 @@
 					"method": "ObjectMethods/indifferent_button.4dm",
 					"visibility": "visible",
 					"fontFamily": "Arial",
-					"fontSize": 13
+					"fontSize": 13,
+					"focusable": false
 				},
 				"Input": {
 					"type": "input",
