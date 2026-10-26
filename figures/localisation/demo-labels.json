@@ -314,7 +314,7 @@
       "source_theme": "dark",
       "source_display_scale": null,
       "rendering_status": "labels_only_font_geometry_not_assessed",
-      "replacement_enabled": false,
+      "replacement_enabled": true,
       "labels": [
         {
           "line": 1,

@@ -1,0 +1,10 @@
+{
+  "fig-07": {
+    "operation": "extend_right",
+    "pixels": 100,
+    "split_x": 900,
+    "region": [605, 145, 1050, 295],
+    "background_donor_x": 1625,
+    "approval": "Editor requested: widen it."
+  }
+}

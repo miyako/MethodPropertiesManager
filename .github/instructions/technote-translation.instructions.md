@@ -205,13 +205,14 @@ Keep code-only figures 03 and 10 unchanged. Figures 01, 02, 04 and 05 still requ
 
 The editor requested a Hiragino Sans trial. Render it with
 `.venv/bin/python tools/render_demo_screenshots.py --write-new`, then
-`make review-draft FIGS="06 08 09"`. The renderer verifies local W3/W6 faces and glyph coverage through
+`make review-draft FIGS="06 07 08 09"`. The renderer verifies local W3/W6 faces and glyph coverage through
 CoreText, preserves protected pixels, and records replay/masks under `figures/localisation/hiragino/`.
 Exit code 2 means a reported figure is blocked by a fit problem; it does not silently substitute an English
-image. Figure 07's full Japanese filter label crosses its red annotation at the source scale, so leave that
-figure unchanged until the editor approves an annotation or wording adjustment. Draft images do not become
-PDF replacements until their visual review is approved. The editor approved figures 06, 08 and 09;
-their layouts now enable those replacements. Figure 07 is still unchanged pending the annotation decision.
+image. Draft images do not become PDF replacements until their visual review is approved.
+The editor approved the Hiragino Sans replacements and widening figure 07's highlight. All four demo
+screenshots (06–09) are enabled. The approved annotation override extends figure 07's right edge by 100px,
+copying its original rounded corners and repeating straight-stroke pixels without resizing any UI.
+Its erasure/draw masks include the explicitly approved annotation change; other protected pixels stay intact.
 
 ## Reassembly (`tools/build.py`)
 

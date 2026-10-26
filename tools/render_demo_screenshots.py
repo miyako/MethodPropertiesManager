@@ -20,6 +20,7 @@ from prepare_demo_screenshot_labels import RESOURCE, read_units
 ROOT = config.ROOT
 PREPARED = ROOT / "figures/localisation/demo-labels.json"
 ARTIFACTS = Path("figures/localisation/hiragino")
+ANNOTATIONS = ROOT / ARTIFACTS / "annotation-overrides.json"
 
 # Rectangles are source-image pixels; none include a control border or example value.
 REGIONS = {
@@ -208,7 +209,79 @@ def changed_pixels(original, candidate):
     )
 
 
-def render_figure(prepared, paths):
+def widen_annotation(original, specification):
+    amount, split = specification["pixels"], specification["split_x"]
+    if specification["operation"] != "extend_right" or type(amount) is not int or amount <= 0:
+        raise ValueError("Annotation widening requires an explicitly approved positive pixel extension")
+    region, donor = specification["region"], specification["background_donor_x"]
+    if not (region[0] < split < region[2] and region[2] + amount < original.width):
+        raise ValueError("Annotation extension is outside the source image")
+    pixels = original.load()
+    rows = {}
+    core = Image.new("L", original.size)
+    core_pixels = core.load()
+    for y in range(region[1], region[3]):
+        samples = [pixels[x, y] for x in range(donor, donor + 5)]
+        if len(set(samples)) != 1:
+            raise ValueError("Annotation background donor is not flat")
+        rows[y] = samples[0]
+        for x in range(region[0], region[2]):
+            red, green, blue = pixels[x, y]
+            if red - max(green, blue) > 70:
+                core_pixels[x, y] = 255
+    if core.getbbox() is None:
+        raise ValueError("No red annotation found in the approved region")
+    nearby = core.filter(ImageFilter.MaxFilter(7)).load()
+    annotation = Image.new("L", original.size)
+    selected = annotation.load()
+    for y, background in rows.items():
+        for x in range(region[0], region[2]):
+            red, green, blue = pixels[x, y]
+            if nearby[x, y] and red > background[0] and green <= background[1] and blue <= background[2]:
+                selected[x, y] = 255
+    canvas = original.copy()
+    output = canvas.load()
+    erase, draw = (Image.new("L", original.size) for _ in range(2))
+    erased, drawn = erase.load(), draw.load()
+    for y, background in rows.items():
+        for x in range(split, region[2]):
+            if selected[x, y]:
+                erased[x, y] = 255
+                output[x, y] = background
+    for y, background in rows.items():
+        for x in range(split, region[2]):
+            if selected[x, y]:
+                if output[x + amount, y] != background:
+                    raise ValueError("Moved annotation would cover an existing control or value")
+                output[x + amount, y] = pixels[x, y]
+                drawn[x + amount, y] = 255
+        if selected[split - 1, y]:
+            samples = [pixels[x, y] for x in range(split - 5, split)]
+            if len(set(samples)) != 1:
+                raise ValueError("Annotation straight-stroke donor is not uniform")
+            for x in range(split, split + amount):
+                if output[x, y] != background:
+                    raise ValueError("Extended annotation would cover an existing control or value")
+                output[x, y] = samples[0]
+                drawn[x, y] = 255
+    old_bounds = annotation.getbbox()
+    new_mask = annotation.copy()
+    new_mask.paste(0, (split, region[1], region[2], region[3]))
+    new_mask = ImageChops.lighter(new_mask, draw)
+    changes = changed_pixels(original, canvas)
+    allowed = ImageChops.lighter(erase, draw)
+    if ImageChops.multiply(changes, ImageChops.invert(allowed)).getbbox():
+        raise ValueError("Unexpected pixel changes while extending the annotation")
+    return canvas, erase, draw, {
+        **specification,
+        "old_bounds": old_bounds,
+        "new_bounds": new_mask.getbbox(),
+        "method": "translate existing right contour/corners and repeat untouched straight-stroke pixels",
+        "background_colors": list(dict.fromkeys(rows.values())),
+    }
+
+
+def render_figure(prepared, paths, annotation_overrides=None):
     stem = prepared["figure"]
     layout = json.loads((ROOT / f"figures/layout/{stem}.json").read_text())
     if layout.get("localize") is not False or layout.get("replace") not in (None, f"{stem}-ja.png"):
@@ -221,9 +294,17 @@ def render_figure(prepared, paths):
         if image.mode != "RGB" or image.info:
             raise ValueError(f"Unexpected source mode/profile requiring explicit handling: {source}")
         original = image.copy()
-    canvas = original.copy()
-    protected = protected_pixels(original)
-    erase_mask, draw_mask = (Image.new("L", original.size) for _ in range(2))
+    if annotation_overrides is None:
+        annotation_overrides = json.loads(ANNOTATIONS.read_text())
+    adjustment = None
+    if stem in annotation_overrides:
+        base, annotation_erase, annotation_draw, adjustment = widen_annotation(original, annotation_overrides[stem])
+    else:
+        base = original.copy()
+        annotation_erase, annotation_draw = (Image.new("L", original.size) for _ in range(2))
+    canvas = base.copy()
+    protected = protected_pixels(base)
+    erase_mask, draw_mask = annotation_erase.copy(), annotation_draw.copy()
     records, fonts = [], {}
     for label in prepared["labels"]:
         if label.get("action") == "preserve":
@@ -271,15 +352,27 @@ def render_figure(prepared, paths):
     allowed = ImageChops.lighter(erase_mask, draw_mask).point(lambda value: 255 if value else 0)
     if ImageChops.multiply(changed, ImageChops.invert(allowed)).getbbox():
         raise ValueError(f"Unexpected changes outside erasure/draw masks: {stem}")
-    if ImageChops.multiply(changed, protected).getbbox():
+    annotation_changes = ImageChops.lighter(annotation_erase, annotation_draw)
+    # Free the old contour's safety halo too; the moved contour remains protected.
+    unchanged_features = ImageChops.multiply(
+        protected_pixels(original),
+        ImageChops.invert(annotation_changes.filter(ImageFilter.MaxFilter(5))),
+    )
+    if ImageChops.multiply(changed, unchanged_features).getbbox():
         raise ValueError(f"Example values, annotations or controls changed: {stem}")
-    return canvas, erase_mask, draw_mask, {
+    if ImageChops.multiply(changed_pixels(base, canvas), protected).getbbox():
+        raise ValueError(f"Text rendering changed a protected feature: {stem}")
+    report = {
         "figure": stem,
         "status": "editor_approved_replacement" if enabled else "editor_requested_font_trial_requires_visual_review",
         "original_sha256": prepared["original_sha256"], "dimensions_px": original.size,
         "changed_pixels": changed.histogram()[255], "unexpected_changes": 0,
         "replacement_enabled": enabled, "labels": records,
     }
+    if adjustment:
+        report["annotation_adjustment"] = adjustment
+        report["mask_scope"] = "text glyphs plus the explicitly approved annotation extension"
+    return canvas, erase_mask, draw_mask, report
 
 
 def encode_png(image):
@@ -354,6 +447,8 @@ def main():
         "shaping": "Pillow FreeType BASIC; horizontal Japanese/Latin; all glyphs verified without fallback",
         "pillow_version": PIL.__version__, "freetype_version": features.version_module("freetype2"),
         "fonts": font_evidence,
+        "annotation_overrides": str(ARTIFACTS / "annotation-overrides.json"),
+        "annotation_overrides_sha256": hashlib.sha256(ANNOTATIONS.read_bytes()).hexdigest(),
         "replay_command": [".venv/bin/python", "tools/render_demo_screenshots.py", "--write-new"],
         "figures": completed, "blocked": blocked,
     }
