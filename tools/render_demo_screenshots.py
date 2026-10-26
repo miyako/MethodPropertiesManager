@@ -152,7 +152,7 @@ def protected_pixels(image):
     return protected
 
 
-def erase_text(original, canvas, box, donor, protected):
+def erase_text(original, canvas, box, donor, protected, *, foreground=None, native_antialiasing=False):
     pixels, output, locked = original.load(), canvas.load(), protected.load()
     rows, candidates = {}, []
     for y in range(box[1], box[3]):
@@ -166,12 +166,16 @@ def erase_text(original, canvas, box, donor, protected):
             delta = [a - b for a, b in zip(pixel, background)]
             if min(delta) > 20 and max(delta) - min(delta) <= 8 and not locked[x, y]:
                 candidates.append(pixel)
-    if not candidates:
-        raise ValueError(f"No text foreground found inside {box}")
-    peak = max(sum(pixel) for pixel in candidates)
-    foreground = Counter(pixel for pixel in candidates if sum(pixel) >= peak - 6).most_common(1)[0][0]
+    if foreground is None:
+        if not candidates:
+            raise ValueError(f"No text foreground found inside {box}")
+        peak = max(sum(pixel) for pixel in candidates)
+        foreground = Counter(pixel for pixel in candidates if sum(pixel) >= peak - 6).most_common(1)[0][0]
     mask = Image.new("L", original.size)
     selected = mask.load()
+    # Native captures include dark glyph shadows and colour-managed antialiasing.
+    minimum = -0.25 if native_antialiasing else 0
+    tolerance = 4.5 if native_antialiasing else 1.05
     for y, background in rows.items():
         direction = [a - b for a, b in zip(foreground, background)]
         norm = sum(value * value for value in direction)
@@ -181,7 +185,7 @@ def erase_text(original, canvas, box, donor, protected):
             delta = [a - b for a, b in zip(pixels[x, y], background)]
             alpha = sum(a * b for a, b in zip(delta, direction)) / norm
             residual = max(abs(a - alpha * b) for a, b in zip(delta, direction))
-            if any(delta) and 0 < alpha <= 1.02 and residual <= 1.05:
+            if any(delta) and minimum < alpha <= 1.02 and residual <= tolerance:
                 selected[x, y] = 255
                 output[x, y] = background
     if mask.getbbox() is None:

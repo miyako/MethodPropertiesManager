@@ -44,9 +44,16 @@ omit the technical-note number from the Japanese cover only.
 | property / attribute | プロパティ / 属性 | 本文のpropertyとattributeを区別します。コマンド名や属性値は変更しません。 |
 | Explorer | エクスプローラー | 4D 20.8：`ExplorerJA.xlf`、`Explorer`（ID 1）。 |
 | Code Editor | メソッドエディター | 編集者指定の用語。本文全体で統一します。 |
-| Method Properties | メソッドプロパティ | 4D 20.8：`ExplorerJA.xlf`、`Exp_MethodProperties`。原文の末尾の三点リーダーは画面に従います。 |
+| Method Properties | メソッドプロパティ | 4D 20.8：メニューは`ExplorerJA.xlf`の`Exp_MethodProperties`、ダイアログタイトルは開発コンポーネントの`MethodEditorJA.xlf`、`Proc_info_windowTitle`。原文の末尾の三点リーダーは画面に従います。 |
 | Edit Properties... | プロパティを編集... | 4D 20.8：`ExplorerMenusJA.xlf`、`exploProperties`（ID 56、5、93、112）。本文では操作名として「プロパティを編集」と表記します。 |
-| batch setting of attributes | 属性の一括設定 | 4D 20.8：`ExplorerMenusJA.xlf`、`exploBatch`（ID 57、94）の「属性の一括設定...」。ネイティブダイアログのタイトルはスクリーンショットの確認時に別途照合します。 |
+| batch setting of attributes | 属性の一括設定 | 4D 20.8：`ExplorerMenusJA.xlf`、`exploBatch`（ID 57、94）の「属性の一括設定...」。機能名とダイアログタイトルの「メソッド属性」を区別します。 |
+| Attributes for methods | メソッド属性 | 4D 20.8開発コンポーネント：`MethodEditorJA.xlf`、`Proc_Info_All_windowTitle`。図04のタイトル。 |
+| Name: / Matching method name: / Value: | 名称: / 一致するメソッド名: / 値: | `MethodEditorJA.xlf`の`Proc_info_Name`、`Proc_info_matchingMethodName`、`Proc_info_value`。画面内ではリソースの半角コロンを維持します。 |
+| Shared by components and host project | コンポーネントとホストプロジェクト間で共有 | `MethodEditorJA.xlf`、`Proc_info_sharedByComponentsAndHostDatabase`。デモの短い選択肢「共有」と区別します。 |
+| Only used in compiled projects / Execution mode: | コンパイル済みのプロジェクトでのみ使用されます / 実行モード: | `MethodEditorJA.xlf`、`preemptiveMode_comment`と`preemptiveMode`。 |
+| Can be run in preemptive processes / Cannot be run in preemptive processes / Indifferent | プリエンプティブプロセスで実行可能 / プリエンプティブプロセスでは実行不可 / 特に設定しない | `MethodEditorJA.xlf`、`br_preemptive_2`、`br_preemptive_3`、`br_preemptive_1`。4D本体のラジオボタン。デモのボタン名とプログラム上の属性値は変更しません。 |
+| Available through: / Web Services / Published in WSDL / 4D tags and URLs (4DACTION...) | 公開オプション: / Webサービス / WSDLを公開 / 4DタグとURL(4DACTION...) | `MethodEditorJA.xlf`、`availableTrough`、`cb_webServices`、`Proc_info_publishedInWsdl`、`cb_4dTags`。 |
+| Attribute to Modify | 変更する属性 | `MethodEditorJA.xlf`、`Proc_info_attributeToModify`。 |
 | preemptive | プリエンプティブ | 4D公式用語。属性値`capable`、`incapable`、`indifferent`は変更しません。 |
 | interpreted mode | インタープリターモード | 4D 20.8：`BuildAppJA.xlf`、`Build_App_Log_Interpreted`。コンパイル済みの実行モードと区別します。 |
 | standalone | シングルユーザー版 | 編集者指定の用語。ローカルの4Dでの実行。 |
@@ -54,6 +61,8 @@ omit the technical-note number from the Japanese cover only.
 | filter | フィルター | メソッド一覧の絞り込み条件。 |
 | naming convention | 命名規則 | `Web`、`Web@`は例示文字列として変更しません。 |
 | Execute / Execute Method | 実行 / メソッドを実行 | 4D 20.8：`ToolBarJA.xlf`の`TB_Execute`、`4DClientJA.xlf`の`common_STR#1029:1`と`:2`。 |
+| New Process / To be executed: / Locally / Debug / Execute | 新規プロセス / メソッド実行先: / ローカル / デバッグ / 実行する | メソッド実行ダイアログ：`4DClientJA.xlf`の`common_STR#1029:3`、`:4`、`:7`、`:6`、`:5`。ツールバーの「実行」とボタンの「実行する」を区別します。 |
+| Cancel / Done | キャンセル / 終了 | `CommonJA.xlf`、`CommonCancel`と`CommonDone`。 |
 | Apply / Remove | 適用 / 解除 | 承認済みのデモUIローカライズで使用するボタン名。英語の元スクリーンショットは、日本語版の確認が終わるまで変更しません。 |
 | capable / incapable / indifferent | capable / incapable / indifferent | プリエンプティブ属性の値。識別子として原文を維持します。 |
 | Capable / Incapable / Indifferent | 実行可 / 実行不可 / 指定なし | デモのプリエンプティブ属性を設定するボタン。保存する属性値は`capable`、`incapable`、`indifferent`のままです。 |

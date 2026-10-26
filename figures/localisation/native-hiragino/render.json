@@ -1,0 +1,2151 @@
+{
+  "app": "/Applications/4D 20.8/4D.app",
+  "app_version": "20.8 build 20.101985",
+  "editorial_approval": "then go: 4D 20.8 Japanese strings and Hiragino Sans review approximations",
+  "historical_native_rendering": "not claimed; original application build, OS and scale unknown",
+  "typography": "Fixed source-scale Hiragino Sans W3/W6 trials; no fitting by shrinking or abbreviation. Japanese explanatory text uses upright W3, not synthetic Latin italics.",
+  "shaping": "Pillow FreeType BASIC; horizontal Japanese/Latin, no combining marks; CoreText glyph coverage",
+  "pillow_version": "13.0.0",
+  "freetype_version": "2.14.3",
+  "fonts": {
+    "3": {
+      "postscript_name": "HiraginoSans-W3",
+      "file": "/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc",
+      "file_sha256": "833776a6fd68e2c71c0c52fd8041195bd3d0a336cdb278170b7ad71c7e1b3475",
+      "face_index": 0,
+      "glyph_coverage": "CoreText glyph IDs checked without fallback",
+      "characters_checked": " \"().4:@ACDILNORSTUWbe、。いえかこさしすたてでとなにのはばべまみらりるれをィイェエオカキクグコサシジスセソタッテデトドネバパビブプホポメモャュョリルロワンー一上不了使例値先入公共力可合名場変始定実属性指数新更有済特用示称終編能致行表複規設適開間集非"
+    },
+    "6": {
+      "postscript_name": "HiraginoSans-W6",
+      "file": "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc",
+      "file_sha256": "790fe535987adc662e83489e162dc54c1e50be8de15169300082f6cc7a082e4e",
+      "face_index": 0,
+      "glyph_coverage": "CoreText glyph IDs checked without fallback",
+      "characters_checked": " \"().4:@ACDILNORSTUWbe、。いえかこさしすたてでとなにのはばべまみらりるれをィイェエオカキクグコサシジスセソタッテデトドネバパビブプホポメモャュョリルロワンー一上不了使例値先入公共力可合名場変始定実属性指数新更有済特用示称終編能致行表複規設適開間集非"
+    }
+  },
+  "figures": [
+    {
+      "figure": "fig-01",
+      "status": "editor_authorised_approximation_pending_checkpoint_4",
+      "original_sha256": "97ba009b3ac2be5ac27349faed9f884ce8be15e04f899c0cd343dc9f8652386f",
+      "dimensions_px": [
+        784,
+        826
+      ],
+      "mode": "RGB",
+      "changed_pixels": 28167,
+      "unexpected_changes": 0,
+      "metadata": {
+        "dpi": null,
+        "icc_profile_sha256": null
+      },
+      "labels": [
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_1",
+              "resname": "Proc_info_windowTitle"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Method Properties",
+            "target": "メソッドプロパティ"
+          },
+          "source_erase_boxes": [
+            [
+              315,
+              55,
+              468,
+              78
+            ]
+          ],
+          "donor_x": 590,
+          "font": "HiraginoSans-W6",
+          "size_px": 18,
+          "positions": [
+            [
+              311,
+              74
+            ]
+          ],
+          "rendered_lines": [
+            "メソッドプロパティ"
+          ],
+          "foreground": [
+            191,
+            190,
+            191
+          ],
+          "draw_bounds": [
+            312,
+            58,
+            470,
+            76
+          ],
+          "fit": [
+            130,
+            53,
+            654,
+            79
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_3",
+              "resname": "Proc_info_Name"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Name:",
+            "target": "名称:"
+          },
+          "source_erase_boxes": [
+            [
+              232,
+              111,
+              283,
+              130
+            ]
+          ],
+          "donor_x": 220,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              245,
+              126
+            ]
+          ],
+          "rendered_lines": [
+            "名称:"
+          ],
+          "foreground": [
+            235,
+            235,
+            235
+          ],
+          "draw_bounds": [
+            245,
+            112,
+            280,
+            128
+          ],
+          "fit": [
+            170,
+            108,
+            283,
+            132
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_6",
+              "resname": "Proc_info_invisible"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Invisible",
+            "target": "非表示"
+          },
+          "source_erase_boxes": [
+            [
+              316,
+              158,
+              380,
+              177
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              318,
+              174
+            ]
+          ],
+          "rendered_lines": [
+            "非表示"
+          ],
+          "foreground": [
+            227,
+            227,
+            226
+          ],
+          "draw_bounds": [
+            318,
+            160,
+            366,
+            176
+          ],
+          "fit": [
+            316,
+            156,
+            680,
+            179
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_21",
+              "resname": "Proc_info_sharedByComponentsAndHostDatabase"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Shared by components and host project",
+            "target": "コンポーネントとホストプロジェクト間で共有"
+          },
+          "source_erase_boxes": [
+            [
+              316,
+              190,
+              622,
+              212
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              318,
+              206
+            ]
+          ],
+          "rendered_lines": [
+            "コンポーネントとホストプロジェクト間で共有"
+          ],
+          "foreground": [
+            232,
+            232,
+            232
+          ],
+          "draw_bounds": [
+            320,
+            191,
+            654,
+            208
+          ],
+          "fit": [
+            316,
+            188,
+            680,
+            213
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "executeOnServer",
+              "resname": "Proc_info_executeOnServer"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Execute on Server",
+            "target": "サーバー上で実行"
+          },
+          "source_erase_boxes": [
+            [
+              316,
+              226,
+              456,
+              245
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              318,
+              242
+            ]
+          ],
+          "rendered_lines": [
+            "サーバー上で実行"
+          ],
+          "foreground": [
+            230,
+            230,
+            230
+          ],
+          "draw_bounds": [
+            319,
+            228,
+            446,
+            244
+          ],
+          "fit": [
+            316,
+            223,
+            680,
+            248
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "preemptiveMode_comment",
+              "resname": "preemptiveMode_comment"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Only used in compiled projects",
+            "target": "コンパイル済みのプロジェクトでのみ使用されます"
+          },
+          "source_erase_boxes": [
+            [
+              294,
+              271,
+              501,
+              291
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 14,
+          "positions": [
+            [
+              236,
+              288
+            ]
+          ],
+          "rendered_lines": [
+            "コンパイル済みのプロジェクトでのみ使用されます"
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "draw_bounds": [
+            238,
+            275,
+            557,
+            290
+          ],
+          "fit": [
+            190,
+            268,
+            680,
+            293
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "preemptiveMode",
+              "resname": "preemptiveMode"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Execution mode:",
+            "target": "実行モード:"
+          },
+          "source_erase_boxes": [
+            [
+              155,
+              297,
+              283,
+              316
+            ]
+          ],
+          "donor_x": 120,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              197,
+              313
+            ]
+          ],
+          "rendered_lines": [
+            "実行モード:"
+          ],
+          "foreground": [
+            237,
+            237,
+            237
+          ],
+          "draw_bounds": [
+            198,
+            299,
+            280,
+            315
+          ],
+          "fit": [
+            130,
+            294,
+            283,
+            319
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "br_preemptive_2",
+              "resname": "br_preemptive_2"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Can be run in preemptive processes",
+            "target": "プリエンプティブプロセスで実行可能"
+          },
+          "source_erase_boxes": [
+            [
+              317,
+              297,
+              557,
+              317
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              319,
+              313
+            ]
+          ],
+          "rendered_lines": [
+            "プリエンプティブプロセスで実行可能"
+          ],
+          "foreground": [
+            221,
+            221,
+            221
+          ],
+          "draw_bounds": [
+            321,
+            298,
+            591,
+            315
+          ],
+          "fit": [
+            317,
+            294,
+            680,
+            320
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "br_preemptive_3",
+              "resname": "br_preemptive_3"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Cannot be run in preemptive processes",
+            "target": "プリエンプティブプロセスでは実行不可"
+          },
+          "source_erase_boxes": [
+            [
+              317,
+              328,
+              579,
+              348
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              319,
+              345
+            ]
+          ],
+          "rendered_lines": [
+            "プリエンプティブプロセスでは実行不可"
+          ],
+          "foreground": [
+            230,
+            230,
+            230
+          ],
+          "draw_bounds": [
+            321,
+            330,
+            607,
+            347
+          ],
+          "fit": [
+            317,
+            326,
+            680,
+            352
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "br_preemptive_1",
+              "resname": "br_preemptive_1"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Indifferent",
+            "target": "特に設定しない"
+          },
+          "source_erase_boxes": [
+            [
+              316,
+              359,
+              388,
+              379
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              318,
+              376
+            ]
+          ],
+          "rendered_lines": [
+            "特に設定しない"
+          ],
+          "foreground": [
+            222,
+            222,
+            222
+          ],
+          "draw_bounds": [
+            318,
+            362,
+            429,
+            379
+          ],
+          "fit": [
+            316,
+            357,
+            680,
+            383
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "availableTrough",
+              "resname": "availableTrough"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Available through:",
+            "target": "公開オプション:"
+          },
+          "source_erase_boxes": [
+            [
+              145,
+              418,
+              283,
+              440
+            ]
+          ],
+          "donor_x": 120,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              165,
+              434
+            ]
+          ],
+          "rendered_lines": [
+            "公開オプション:"
+          ],
+          "foreground": [
+            235,
+            235,
+            235
+          ],
+          "draw_bounds": [
+            165,
+            420,
+            280,
+            436
+          ],
+          "fit": [
+            128,
+            415,
+            283,
+            442
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "cb_webServices",
+              "resname": "cb_webServices"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Web Services",
+            "target": "Webサービス"
+          },
+          "source_erase_boxes": [
+            [
+              315,
+              417,
+              421,
+              437
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              317,
+              434
+            ]
+          ],
+          "rendered_lines": [
+            "Webサービス"
+          ],
+          "foreground": [
+            236,
+            236,
+            236
+          ],
+          "draw_bounds": [
+            317,
+            419,
+            415,
+            436
+          ],
+          "fit": [
+            315,
+            415,
+            680,
+            441
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_8",
+              "resname": "Proc_info_publishedInWsdl"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Published in WSDL",
+            "target": "WSDLを公開"
+          },
+          "source_erase_boxes": [
+            [
+              338,
+              443,
+              466,
+              462
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 14,
+          "positions": [
+            [
+              340,
+              460
+            ]
+          ],
+          "rendered_lines": [
+            "WSDLを公開"
+          ],
+          "foreground": [
+            227,
+            227,
+            227
+          ],
+          "draw_bounds": [
+            340,
+            448,
+            423,
+            462
+          ],
+          "fit": [
+            338,
+            441,
+            680,
+            465
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "cb_4dTags",
+              "resname": "cb_4dTags"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "4D tags and URLs (4DACTION...)",
+            "target": "4DタグとURL(4DACTION...)"
+          },
+          "source_erase_boxes": [
+            [
+              315,
+              479,
+              568,
+              501
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              317,
+              496
+            ]
+          ],
+          "rendered_lines": [
+            "4DタグとURL(4DACTION...)"
+          ],
+          "foreground": [
+            239,
+            239,
+            239
+          ],
+          "draw_bounds": [
+            317,
+            481,
+            530,
+            498
+          ],
+          "fit": [
+            315,
+            477,
+            680,
+            504
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/CommonJA.xlf",
+            "sha256": "3dd1f3e65ee11eff1460f3e4d769b752a4be233fef10cb6957e08bb5c8204887",
+            "attributes": {
+              "id": "2",
+              "resname": "CommonCancel"
+            },
+            "context": [
+              {
+                "id": "1000",
+                "resname": "StandardButtons"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Cancel",
+            "target": "キャンセル"
+          },
+          "source_erase_boxes": [
+            [
+              509,
+              685,
+              565,
+              704
+            ]
+          ],
+          "donor_x": 503,
+          "font": "HiraginoSans-W3",
+          "size_px": 16,
+          "positions": [
+            [
+              497,
+              702
+            ]
+          ],
+          "rendered_lines": [
+            "キャンセル"
+          ],
+          "foreground": [
+            243,
+            243,
+            243
+          ],
+          "draw_bounds": [
+            498,
+            688,
+            577,
+            704
+          ],
+          "fit": [
+            493,
+            681,
+            579,
+            706
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        }
+      ],
+      "output": "figures/fig-01-ja.png",
+      "output_sha256": "1fbfa4fde64988d08820cdf476c295ebc5111823a2e9aabe5756947a24b96bb4",
+      "masks": {
+        "erase": "figures/localisation/native-hiragino/fig-01-erase.png",
+        "draw": "figures/localisation/native-hiragino/fig-01-draw.png"
+      }
+    },
+    {
+      "figure": "fig-04",
+      "status": "editor_authorised_approximation_pending_checkpoint_4",
+      "original_sha256": "4ef80b94e07f3fa790b6c061f9b29ff22591028473fd889435a4b1a5f750c92c",
+      "dimensions_px": [
+        880,
+        720
+      ],
+      "mode": "RGB",
+      "changed_pixels": 28877,
+      "unexpected_changes": 0,
+      "metadata": {
+        "dpi": null,
+        "icc_profile_sha256": null
+      },
+      "labels": [
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_Info_13",
+              "resname": "Proc_Info_All_windowTitle"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Attributes for methods",
+            "target": "メソッド属性"
+          },
+          "source_erase_boxes": [
+            [
+              322,
+              68,
+              557,
+              93
+            ]
+          ],
+          "donor_x": 610,
+          "font": "HiraginoSans-W6",
+          "size_px": 20,
+          "positions": [
+            [
+              380,
+              88
+            ]
+          ],
+          "rendered_lines": [
+            "メソッド属性"
+          ],
+          "foreground": [
+            196,
+            194,
+            192
+          ],
+          "draw_bounds": [
+            381,
+            70,
+            500,
+            90
+          ],
+          "fit": [
+            140,
+            65,
+            740,
+            96
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_14",
+              "resname": "Proc_info_matchingMethodName"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Matching method name:",
+            "target": "一致するメソッド名:"
+          },
+          "source_erase_boxes": [
+            [
+              214,
+              136,
+              449,
+              163
+            ]
+          ],
+          "donor_x": 180,
+          "font": "HiraginoSans-W3",
+          "size_px": 20,
+          "positions": [
+            [
+              260,
+              157
+            ]
+          ],
+          "rendered_lines": [
+            "一致するメソッド名:"
+          ],
+          "foreground": [
+            244,
+            244,
+            243
+          ],
+          "draw_bounds": [
+            261,
+            139,
+            444,
+            159
+          ],
+          "fit": [
+            160,
+            131,
+            450,
+            168
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_15",
+              "resname": "Proc_info_useThe@ToDesignateSeveralMethods"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Use the @ to designate several methods. For example, enter “Web@” to designate the methods whose name begins with “Web”, or “@” for all the methods.",
+            "target": "複数のメソッドを指定するにはワイルドカード \"@\" を使用します。例えば \"Web@\" と入力すれば \"Web\" から始まるメソッド、\"@\" の場合はすべてのメソッドを指定したことになります。"
+          },
+          "source_erase_boxes": [
+            [
+              141,
+              179,
+              739,
+              201
+            ],
+            [
+              136,
+              200,
+              743,
+              222
+            ],
+            [
+              399,
+              221,
+              475,
+              240
+            ]
+          ],
+          "donor_x": 760,
+          "font": "HiraginoSans-W3",
+          "size_px": 18,
+          "positions": [
+            [
+              141,
+              198
+            ],
+            [
+              143,
+              218
+            ],
+            [
+              278,
+              238
+            ]
+          ],
+          "rendered_lines": [
+            "複数のメソッドを指定するにはワイルドカード \"@\" を使用します。例えば",
+            " \"Web@\" と入力すれば \"Web\" から始まるメソッド、\"@\" の場合はすべて",
+            "のメソッドを指定したことになります。"
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "draw_bounds": [
+            141,
+            181,
+            739,
+            240
+          ],
+          "fit": [
+            135,
+            175,
+            745,
+            244
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_16",
+              "resname": "Proc_info_attributeToModify"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Attribute to Modify",
+            "target": "変更する属性"
+          },
+          "source_erase_boxes": [
+            [
+              136,
+              277,
+              282,
+              300
+            ]
+          ],
+          "donor_x": 700,
+          "font": "HiraginoSans-W3",
+          "size_px": 18,
+          "positions": [
+            [
+              139,
+              297
+            ]
+          ],
+          "rendered_lines": [
+            "変更する属性"
+          ],
+          "foreground": [
+            242,
+            242,
+            241
+          ],
+          "draw_bounds": [
+            139,
+            281,
+            246,
+            300
+          ],
+          "fit": [
+            136,
+            273,
+            744,
+            303
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_6",
+              "resname": "Proc_info_invisible"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Invisible",
+            "target": "非表示"
+          },
+          "source_erase_boxes": [
+            [
+              161,
+              327,
+              241,
+              351
+            ]
+          ],
+          "donor_x": 400,
+          "font": "HiraginoSans-W3",
+          "size_px": 22,
+          "positions": [
+            [
+              164,
+              348
+            ]
+          ],
+          "rendered_lines": [
+            "非表示"
+          ],
+          "foreground": [
+            245,
+            245,
+            245
+          ],
+          "draw_bounds": [
+            165,
+            329,
+            230,
+            351
+          ],
+          "fit": [
+            159,
+            323,
+            629,
+            354
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf",
+            "sha256": "757dc14da6ac12a50c1780cbc01e11706d4d9ba622fc9305404b6f6f699d9668",
+            "attributes": {
+              "id": "Proc_info_17",
+              "resname": "Proc_info_value"
+            },
+            "context": [
+              {
+                "id": "was_1078",
+                "resname": "Method Properties"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Value:",
+            "target": "値:"
+          },
+          "source_erase_boxes": [
+            [
+              228,
+              377,
+              289,
+              400
+            ]
+          ],
+          "donor_x": 200,
+          "font": "HiraginoSans-W3",
+          "size_px": 20,
+          "positions": [
+            [
+              261,
+              398
+            ]
+          ],
+          "rendered_lines": [
+            "値:"
+          ],
+          "foreground": [
+            236,
+            236,
+            236
+          ],
+          "draw_bounds": [
+            261,
+            380,
+            285,
+            400
+          ],
+          "fit": [
+            160,
+            374,
+            289,
+            404
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/CommonJA.xlf",
+            "sha256": "3dd1f3e65ee11eff1460f3e4d769b752a4be233fef10cb6957e08bb5c8204887",
+            "attributes": {
+              "id": "10",
+              "resname": "CommonApply"
+            },
+            "context": [
+              {
+                "id": "1000",
+                "resname": "StandardButtons"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Apply",
+            "target": "適用"
+          },
+          "source_erase_boxes": [
+            [
+              420,
+              470,
+              472,
+              489
+            ]
+          ],
+          "donor_x": 398,
+          "font": "HiraginoSans-W3",
+          "size_px": 20,
+          "positions": [
+            [
+              426,
+              486
+            ]
+          ],
+          "rendered_lines": [
+            "適用"
+          ],
+          "foreground": [
+            248,
+            248,
+            247
+          ],
+          "draw_bounds": [
+            426,
+            468,
+            464,
+            488
+          ],
+          "fit": [
+            391,
+            468,
+            502,
+            491
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/CommonJA.xlf",
+            "sha256": "3dd1f3e65ee11eff1460f3e4d769b752a4be233fef10cb6957e08bb5c8204887",
+            "attributes": {
+              "id": "9",
+              "resname": "CommonDone"
+            },
+            "context": [
+              {
+                "id": "1000",
+                "resname": "StandardButtons"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Done",
+            "target": "終了"
+          },
+          "source_erase_boxes": [
+            [
+              659,
+              546,
+              713,
+              570
+            ]
+          ],
+          "donor_x": 630,
+          "font": "HiraginoSans-W3",
+          "size_px": 20,
+          "positions": [
+            [
+              666,
+              566
+            ]
+          ],
+          "rendered_lines": [
+            "終了"
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "draw_bounds": [
+            667,
+            548,
+            704,
+            568
+          ],
+          "fit": [
+            625,
+            540,
+            746,
+            574
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        }
+      ],
+      "output": "figures/fig-04-ja.png",
+      "output_sha256": "ddc73312ac1ade966fa8bf6426af03c83bba2fce60a53b6a4e5ee9a4113420aa",
+      "masks": {
+        "erase": "figures/localisation/native-hiragino/fig-04-erase.png",
+        "draw": "figures/localisation/native-hiragino/fig-04-draw.png"
+      }
+    },
+    {
+      "figure": "fig-05",
+      "status": "editor_authorised_approximation_pending_checkpoint_4",
+      "original_sha256": "9d8ecbb68153e7bfd01cdea406e003abce1e00da849f9dd73536a62265ae927e",
+      "dimensions_px": [
+        814,
+        820
+      ],
+      "mode": "RGB",
+      "changed_pixels": 13368,
+      "unexpected_changes": 0,
+      "metadata": {
+        "dpi": [
+          96.012,
+          96.012
+        ],
+        "icc_profile_sha256": "2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e"
+      },
+      "labels": [
+        {
+          "resource": {
+            "file": "ja.lproj/ToolBarJA.xlf",
+            "sha256": "0dedd3c77c35a298d24fc40343c01ecbd8c98e65f9fd1a969aa549ce09cd9312",
+            "attributes": {
+              "id": "25",
+              "resname": "TB_Execute"
+            },
+            "context": [
+              {
+                "resname": "Buttons"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Execute",
+            "target": "実行"
+          },
+          "source_erase_boxes": [
+            [
+              43,
+              80,
+              129,
+              104
+            ]
+          ],
+          "donor_x": 30,
+          "font": "HiraginoSans-W3",
+          "size_px": 22,
+          "positions": [
+            [
+              64,
+              101
+            ]
+          ],
+          "rendered_lines": [
+            "実行"
+          ],
+          "foreground": [
+            220,
+            220,
+            220
+          ],
+          "draw_bounds": [
+            65,
+            82,
+            107,
+            104
+          ],
+          "fit": [
+            20,
+            77,
+            131,
+            108
+          ],
+          "restoration": {
+            "method": "adjacent dithered row-gradient strip under glyphs and one-pixel halo",
+            "donor_strip": [
+              200,
+              80,
+              286,
+              104
+            ],
+            "residual_background_noise_max": 6,
+            "visual_review_required": true
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/4DClientJA.xlf",
+            "sha256": "4467b04000db911568d2e258244b2914c0363e29f2c6f3dcfd0cd6ad1f85a473",
+            "attributes": {
+              "id": "1",
+              "resname": "common_STR#1029:1"
+            },
+            "context": [
+              {
+                "id": "1029",
+                "resname": "STR#1029"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Execute Method",
+            "target": "メソッドを実行"
+          },
+          "source_erase_boxes": [
+            [
+              301,
+              131,
+              511,
+              161
+            ]
+          ],
+          "donor_x": 650,
+          "font": "HiraginoSans-W6",
+          "size_px": 26,
+          "positions": [
+            [
+              316,
+              157
+            ]
+          ],
+          "rendered_lines": [
+            "メソッドを実行"
+          ],
+          "foreground": [
+            184,
+            183,
+            184
+          ],
+          "draw_bounds": [
+            318,
+            134,
+            498,
+            160
+          ],
+          "fit": [
+            165,
+            128,
+            649,
+            166
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/4DClientJA.xlf",
+            "sha256": "4467b04000db911568d2e258244b2914c0363e29f2c6f3dcfd0cd6ad1f85a473",
+            "attributes": {
+              "id": "3",
+              "resname": "common_STR#1029:3"
+            },
+            "context": [
+              {
+                "id": "1029",
+                "resname": "STR#1029"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "New Process",
+            "target": "新規プロセス"
+          },
+          "source_erase_boxes": [
+            [
+              73,
+              591,
+              212,
+              616
+            ]
+          ],
+          "donor_x": 600,
+          "font": "HiraginoSans-W3",
+          "size_px": 22,
+          "positions": [
+            [
+              76,
+              612
+            ]
+          ],
+          "rendered_lines": [
+            "新規プロセス"
+          ],
+          "foreground": [
+            223,
+            223,
+            223
+          ],
+          "draw_bounds": [
+            76,
+            593,
+            206,
+            615
+          ],
+          "fit": [
+            73,
+            586,
+            700,
+            622
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/4DClientJA.xlf",
+            "sha256": "4467b04000db911568d2e258244b2914c0363e29f2c6f3dcfd0cd6ad1f85a473",
+            "attributes": {
+              "id": "4",
+              "resname": "common_STR#1029:4"
+            },
+            "context": [
+              {
+                "id": "1029",
+                "resname": "STR#1029"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "To be executed: ",
+            "target": "メソッド実行先: "
+          },
+          "source_erase_boxes": [
+            [
+              170,
+              638,
+              364,
+              667
+            ]
+          ],
+          "donor_x": 130,
+          "font": "HiraginoSans-W3",
+          "size_px": 24,
+          "positions": [
+            [
+              178,
+              662
+            ]
+          ],
+          "rendered_lines": [
+            "メソッド実行先: "
+          ],
+          "foreground": [
+            223,
+            223,
+            223
+          ],
+          "draw_bounds": [
+            180,
+            641,
+            351,
+            665
+          ],
+          "fit": [
+            130,
+            630,
+            365,
+            674
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/4DClientJA.xlf",
+            "sha256": "4467b04000db911568d2e258244b2914c0363e29f2c6f3dcfd0cd6ad1f85a473",
+            "attributes": {
+              "id": "7",
+              "resname": "common_STR#1029:7"
+            },
+            "context": [
+              {
+                "id": "1029",
+                "resname": "STR#1029"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Locally",
+            "target": "ローカル"
+          },
+          "source_erase_boxes": [
+            [
+              386,
+              638,
+              476,
+              668
+            ]
+          ],
+          "donor_x": 550,
+          "font": "HiraginoSans-W3",
+          "size_px": 24,
+          "positions": [
+            [
+              390,
+              662
+            ]
+          ],
+          "rendered_lines": [
+            "ローカル"
+          ],
+          "foreground": [
+            118,
+            118,
+            117
+          ],
+          "draw_bounds": [
+            393,
+            642,
+            485,
+            663
+          ],
+          "fit": [
+            383,
+            632,
+            664,
+            673
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/CommonJA.xlf",
+            "sha256": "3dd1f3e65ee11eff1460f3e4d769b752a4be233fef10cb6957e08bb5c8204887",
+            "attributes": {
+              "id": "2",
+              "resname": "CommonCancel"
+            },
+            "context": [
+              {
+                "id": "1000",
+                "resname": "StandardButtons"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Cancel",
+            "target": "キャンセル"
+          },
+          "source_erase_boxes": [
+            [
+              177,
+              741,
+              266,
+              769
+            ]
+          ],
+          "donor_x": 163,
+          "font": "HiraginoSans-W3",
+          "size_px": 26,
+          "positions": [
+            [
+              158,
+              764
+            ]
+          ],
+          "rendered_lines": [
+            "キャンセル"
+          ],
+          "foreground": [
+            231,
+            231,
+            231
+          ],
+          "draw_bounds": [
+            160,
+            742,
+            287,
+            766
+          ],
+          "fit": [
+            157,
+            737,
+            291,
+            777
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/4DClientJA.xlf",
+            "sha256": "4467b04000db911568d2e258244b2914c0363e29f2c6f3dcfd0cd6ad1f85a473",
+            "attributes": {
+              "id": "6",
+              "resname": "common_STR#1029:6"
+            },
+            "context": [
+              {
+                "id": "1029",
+                "resname": "STR#1029"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Debug",
+            "target": "デバッグ"
+          },
+          "source_erase_boxes": [
+            [
+              357,
+              741,
+              439,
+              773
+            ]
+          ],
+          "donor_x": 337,
+          "font": "HiraginoSans-W3",
+          "size_px": 26,
+          "positions": [
+            [
+              347,
+              764
+            ]
+          ],
+          "rendered_lines": [
+            "デバッグ"
+          ],
+          "foreground": [
+            231,
+            231,
+            231
+          ],
+          "draw_bounds": [
+            349,
+            740,
+            451,
+            766
+          ],
+          "fit": [
+            333,
+            737,
+            467,
+            777
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/4DClientJA.xlf",
+            "sha256": "4467b04000db911568d2e258244b2914c0363e29f2c6f3dcfd0cd6ad1f85a473",
+            "attributes": {
+              "id": "5",
+              "resname": "common_STR#1029:5"
+            },
+            "context": [
+              {
+                "id": "1029",
+                "resname": "STR#1029"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Execute",
+            "target": "実行する"
+          },
+          "source_erase_boxes": [
+            [
+              531,
+              741,
+              644,
+              771
+            ]
+          ],
+          "donor_x": 518,
+          "font": "HiraginoSans-W3",
+          "size_px": 26,
+          "positions": [
+            [
+              531,
+              764
+            ]
+          ],
+          "rendered_lines": [
+            "実行する"
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "draw_bounds": [
+            532,
+            741,
+            632,
+            767
+          ],
+          "fit": [
+            511,
+            737,
+            655,
+            777
+          ],
+          "restoration": {
+            "method": "row donors under glyphs including native antialiasing/shadows",
+            "source_glyph_residual_pixels": 0
+          }
+        }
+      ],
+      "output": "figures/fig-05-ja.png",
+      "output_sha256": "817db8e6d3cdae7d729b0865d2c18291d2a0d6ced99dce9b5924980d340f845a",
+      "masks": {
+        "erase": "figures/localisation/native-hiragino/fig-05-erase.png",
+        "draw": "figures/localisation/native-hiragino/fig-05-draw.png"
+      }
+    }
+  ],
+  "blocked": [
+    {
+      "figure": "fig-02",
+      "original_sha256": "54f46774a26d21aabedb015d06de1db8ebe270c7872dcd686a75880a0780431c",
+      "reason": "Complete official labels exceed the existing menu and Documentation tab. No shrinking, abbreviation, menu widening or tab resizing has been authorised.",
+      "labels": [
+        {
+          "resource": {
+            "file": "ja.lproj/ExplorerMenusJA.xlf",
+            "sha256": "710f7831d246f12cc3fbc6e8165b67c9072b6457825317b687ecac48c012731e",
+            "attributes": {
+              "id": "122",
+              "{http://www.4d.com}command": "exploEditComment"
+            },
+            "context": [
+              {
+                "resname": "ContextualMenuExplorerMethods",
+                "restype": "menu"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Edit Documentation...",
+            "target": "ドキュメンテーションを編集..."
+          },
+          "size_px": 22,
+          "full_label_width_px": 301.0,
+          "available_width_px": 232
+        },
+        {
+          "resource": {
+            "file": "ja.lproj/ExplorerJA.xlf",
+            "sha256": "7c2e572f2784861ada93f8fa318419937f28117f1e8da59df035c1d55621a920",
+            "attributes": {
+              "id": "11",
+              "resname": "Exp_Comments"
+            },
+            "context": [
+              {
+                "resname": "Explorer Lists",
+                "id": "407"
+              }
+            ],
+            "languages": {
+              "source-language": "en-US",
+              "target-language": "ja"
+            },
+            "source": "Documentation",
+            "target": "ドキュメンテーション"
+          },
+          "size_px": 18,
+          "full_label_width_px": 180.0,
+          "available_width_px": 150
+        }
+      ],
+      "replacement_enabled": false
+    }
+  ],
+  "replay_command": [
+    ".venv/bin/python",
+    "tools/render_native_screenshots.py",
+    "--write-new"
+  ]
+}

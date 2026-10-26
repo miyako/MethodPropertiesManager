@@ -214,6 +214,28 @@ screenshots (06–09) are enabled. The approved annotation override extends figu
 copying its original rounded corners and repeating straight-stroke pixels without resizing any UI.
 Its erasure/draw masks include the explicitly approved annotation change; other protected pixels stay intact.
 
+For native dialogs 01, 04 and 05, the editor authorised 4D 20.8 Japanese resources and Hiragino Sans review
+approximations. Their mechanically reviewed replacements are included in the review PDF, pending checkpoint 4.
+They are **not** historical native captures: the source 4D/macOS build and scale remain unknown.
+Replay the task-specific renderer without overwriting edited artifacts:
+
+```sh
+.venv/bin/python tools/render_native_screenshots.py --write-new
+make review-draft FIGS="01 04 05"
+```
+
+The minimal resource/context mappings, exact glyph masks, font evidence and replay hashes are in
+`figures/localisation/native-hiragino/`. The renderer checks line-aligned labels against the actual full 4D
+resources. It preserves source ICC profiles/DPI, method names, the `@` input and Boolean values.
+Native text restoration accounts for antialiasing/shadows; figure 05's dithered toolbar uses an adjacent
+untouched row-gradient strip only under the source glyphs and a one-pixel halo, recorded separately.
+Japanese explanatory text uses upright Hiragino Sans W3, not synthetic Latin italics.
+
+Exit code 2 currently reports **figure 02 blocked**: its complete Japanese documentation menu command and
+tab caption exceed the existing control widths (301px/232px and 180px/150px, respectively). Its original stays
+enabled. Do not shrink, abbreviate, widen the menu/tab, or obscure additional code without the editor's
+approval or a reviewed matching native capture. Figures 03 and 10 remain unchanged code screenshots.
+
 ## Reassembly (`tools/build.py`)
 
 1. Check: code blocks are compared by position, ```` ```text ```` blocks are skipped, and the sets of figure
