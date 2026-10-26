@@ -1,0 +1,1141 @@
+{
+  "status": "labels_prepared_images_unchanged",
+  "prepare_command": [
+    ".venv/bin/python",
+    "tools/prepare_demo_screenshot_labels.py",
+    "--app",
+    "/Applications/4D 20.8/4D.app",
+    "--write-new",
+    "--output",
+    "figures/localisation/demo-labels.json"
+  ],
+  "form": "demo/MethodPropertiesManager/Project/Sources/Forms/method_properties_manager/form.4DForm",
+  "full_4d_resource": {
+    "app": "/Applications/4D 20.8/4D.app",
+    "version": "20.8 build 20.101985",
+    "file": "Contents/Resources/ja.lproj/CommonJA.xlf",
+    "sha256": "3dd1f3e65ee11eff1460f3e4d769b752a4be233fef10cb6957e08bb5c8204887"
+  },
+  "review_gate": "Declared fonts do not prove Japanese fallback or historical native title rendering. Confirm fonts, baselines, fit and precise masks before drawing or enabling replace.",
+  "preserve_entirely": [
+    "fig-03",
+    "fig-10"
+  ],
+  "native_ui_pending_matching_environment": [
+    "fig-01",
+    "fig-02",
+    "fig-04",
+    "fig-05"
+  ],
+  "figures": [
+    {
+      "figure": "fig-06",
+      "original_sha256": "081b314fa6e8138b92540e65fabeeb7a7901e89ee3497a514431b64af17edc76",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "mode": "RGB",
+      "source_4d_build": null,
+      "source_os_version": null,
+      "source_locale": "en",
+      "source_theme": "dark",
+      "source_display_scale": null,
+      "rendering_status": "blocked_pending_font_geometry_confirmation",
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "line": 1,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_WindowTitle",
+          "control": "window title",
+          "ocr_box": [
+            698,
+            92,
+            358,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": null,
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 2,
+          "source": "Methods",
+          "target": "メソッド",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Methods",
+          "control": "List Box",
+          "ocr_box": [
+            161,
+            185,
+            97,
+            18
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 12,
+            "weight": "bold"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 3,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_FilterLabel",
+          "control": "Text1",
+          "ocr_box": [
+            633,
+            183,
+            379,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 4,
+          "source": "Method1",
+          "action": "preserve"
+        },
+        {
+          "line": 5,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List",
+          "ocr_box": [
+            633,
+            226,
+            54,
+            33
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 6,
+          "source": "Method2",
+          "action": "preserve"
+        },
+        {
+          "line": 7,
+          "source": "Method3",
+          "action": "preserve"
+        },
+        {
+          "line": 8,
+          "source": "Method4",
+          "action": "preserve"
+        },
+        {
+          "line": 9,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            634,
+            345,
+            896,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 1
+        },
+        {
+          "line": 10,
+          "source": "Method5",
+          "action": "preserve"
+        },
+        {
+          "line": 11,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            632,
+            375,
+            314,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 2
+        },
+        {
+          "line": 12,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List1",
+          "ocr_box": [
+            641,
+            423,
+            45,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 13,
+          "source": "Apply",
+          "target": "適用",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Apply",
+          "control": "apply_button",
+          "ocr_box": [
+            1088,
+            423,
+            66,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 14,
+          "source": "Remove",
+          "target": "解除",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Remove",
+          "control": "remove_button",
+          "ocr_box": [
+            1274,
+            423,
+            94,
+            19
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 15,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Count",
+          "control": "Text3",
+          "ocr_box": [
+            348,
+            842,
+            101,
+            26
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 18,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 16,
+          "source": "Close",
+          "target": "閉じる",
+          "resource": "4D/CommonJA.xlf",
+          "resname": "CommonClose",
+          "control": "Button2",
+          "ocr_box": [
+            1489,
+            846,
+            65,
+            20
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        }
+      ]
+    },
+    {
+      "figure": "fig-07",
+      "original_sha256": "74d1c91d0c109bce4b7eb4e274bb3da8378a7c348c32c097b0451328c99735bf",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "mode": "RGB",
+      "source_4d_build": null,
+      "source_os_version": null,
+      "source_locale": "en",
+      "source_theme": "dark",
+      "source_display_scale": null,
+      "rendering_status": "blocked_pending_font_geometry_confirmation",
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "line": 1,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_WindowTitle",
+          "control": "window title",
+          "ocr_box": [
+            698,
+            92,
+            358,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": null,
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 2,
+          "source": "Methods",
+          "target": "メソッド",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Methods",
+          "control": "List Box",
+          "ocr_box": [
+            161,
+            185,
+            97,
+            18
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 12,
+            "weight": "bold"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 3,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_FilterLabel",
+          "control": "Text1",
+          "ocr_box": [
+            633,
+            183,
+            379,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 4,
+          "source": "Method1",
+          "action": "preserve"
+        },
+        {
+          "line": 5,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List",
+          "ocr_box": [
+            633,
+            226,
+            54,
+            33
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 6,
+          "source": "Method2",
+          "action": "preserve"
+        },
+        {
+          "line": 7,
+          "source": "Method3",
+          "action": "preserve"
+        },
+        {
+          "line": 8,
+          "source": "Method4",
+          "action": "preserve"
+        },
+        {
+          "line": 9,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            634,
+            345,
+            896,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 1
+        },
+        {
+          "line": 10,
+          "source": "Method5",
+          "action": "preserve"
+        },
+        {
+          "line": 11,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            632,
+            375,
+            314,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 2
+        },
+        {
+          "line": 12,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List1",
+          "ocr_box": [
+            641,
+            423,
+            45,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 13,
+          "source": "Apply",
+          "target": "適用",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Apply",
+          "control": "apply_button",
+          "ocr_box": [
+            1088,
+            423,
+            66,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 14,
+          "source": "Remove",
+          "target": "解除",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Remove",
+          "control": "remove_button",
+          "ocr_box": [
+            1274,
+            423,
+            94,
+            19
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 15,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Count",
+          "control": "Text3",
+          "ocr_box": [
+            348,
+            842,
+            101,
+            26
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 18,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 16,
+          "source": "Close",
+          "target": "閉じる",
+          "resource": "4D/CommonJA.xlf",
+          "resname": "CommonClose",
+          "control": "Button2",
+          "ocr_box": [
+            1489,
+            846,
+            65,
+            20
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        }
+      ]
+    },
+    {
+      "figure": "fig-08",
+      "original_sha256": "e9e5faae0255568d2893415d130ae35a55bbce4ad92c2d4620de47235256c489",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "mode": "RGB",
+      "source_4d_build": null,
+      "source_os_version": null,
+      "source_locale": "en",
+      "source_theme": "dark",
+      "source_display_scale": null,
+      "rendering_status": "blocked_pending_font_geometry_confirmation",
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "line": 1,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_WindowTitle",
+          "control": "window title",
+          "ocr_box": [
+            698,
+            92,
+            358,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": null,
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 2,
+          "source": "Methods",
+          "target": "メソッド",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Methods",
+          "control": "List Box",
+          "ocr_box": [
+            161,
+            185,
+            97,
+            18
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 12,
+            "weight": "bold"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 3,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_FilterLabel",
+          "control": "Text1",
+          "ocr_box": [
+            633,
+            183,
+            379,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 4,
+          "source": "Method1",
+          "action": "preserve"
+        },
+        {
+          "line": 5,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List",
+          "ocr_box": [
+            633,
+            226,
+            54,
+            33
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 6,
+          "source": "Method2",
+          "action": "preserve"
+        },
+        {
+          "line": 7,
+          "source": "Method3",
+          "action": "preserve"
+        },
+        {
+          "line": 8,
+          "source": "Method4",
+          "action": "preserve"
+        },
+        {
+          "line": 9,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            634,
+            345,
+            896,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 1
+        },
+        {
+          "line": 10,
+          "source": "Method5",
+          "action": "preserve"
+        },
+        {
+          "line": 11,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            632,
+            375,
+            314,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 2
+        },
+        {
+          "line": 12,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List1",
+          "ocr_box": [
+            641,
+            423,
+            45,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 13,
+          "source": "Apply",
+          "target": "適用",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Apply",
+          "control": "apply_button",
+          "ocr_box": [
+            1088,
+            423,
+            66,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 14,
+          "source": "Remove",
+          "target": "解除",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Remove",
+          "control": "remove_button",
+          "ocr_box": [
+            1274,
+            423,
+            94,
+            19
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 15,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Count",
+          "control": "Text3",
+          "ocr_box": [
+            348,
+            842,
+            101,
+            26
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 18,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 16,
+          "source": "Close",
+          "target": "閉じる",
+          "resource": "4D/CommonJA.xlf",
+          "resname": "CommonClose",
+          "control": "Button2",
+          "ocr_box": [
+            1489,
+            846,
+            65,
+            20
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        }
+      ]
+    },
+    {
+      "figure": "fig-09",
+      "original_sha256": "855321eb5bb104ea3387d4bcb07dca91a1c74e5d1ea1c6c91799f58af28a8728",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "mode": "RGB",
+      "source_4d_build": null,
+      "source_os_version": null,
+      "source_locale": "en",
+      "source_theme": "dark",
+      "source_display_scale": null,
+      "rendering_status": "blocked_pending_font_geometry_confirmation",
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "line": 1,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_WindowTitle",
+          "control": "window title",
+          "ocr_box": [
+            698,
+            92,
+            358,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": null,
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 2,
+          "source": "Methods",
+          "target": "メソッド",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Methods",
+          "control": "List Box",
+          "ocr_box": [
+            161,
+            185,
+            97,
+            18
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 12,
+            "weight": "bold"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 3,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_FilterLabel",
+          "control": "Text1",
+          "ocr_box": [
+            633,
+            183,
+            271,
+            19
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 4,
+          "source": "Method1",
+          "action": "preserve"
+        },
+        {
+          "line": 5,
+          "source": "Any",
+          "target": "すべて",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoiceAny",
+          "control": "Popup Dropdown List",
+          "ocr_box": [
+            642,
+            227,
+            45,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 6,
+          "source": "Method2",
+          "action": "preserve"
+        },
+        {
+          "line": 7,
+          "source": "Method3",
+          "action": "preserve"
+        },
+        {
+          "line": 8,
+          "source": "Method4",
+          "action": "preserve"
+        },
+        {
+          "line": 9,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            634,
+            345,
+            896,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 1
+        },
+        {
+          "line": 10,
+          "source": "Method5",
+          "action": "preserve"
+        },
+        {
+          "line": 11,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_EditLabel",
+          "control": "Text2",
+          "ocr_box": [
+            632,
+            375,
+            314,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null,
+          "resource_line": 2
+        },
+        {
+          "line": 12,
+          "source": "Preemptive",
+          "target": "プリエンプティブ実行",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_ChoicePreemptive",
+          "control": "Popup Dropdown List1",
+          "ocr_box": [
+            643,
+            423,
+            129,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 13,
+          "source": "Capable",
+          "target": "実行可",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Capable",
+          "control": "capable_button",
+          "ocr_box": [
+            1073,
+            422,
+            95,
+            25
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 14,
+          "source": "Incapable",
+          "target": "実行不可",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Incapable",
+          "control": "incapable_button",
+          "ocr_box": [
+            1266,
+            423,
+            110,
+            24
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 15,
+          "source": "Indifferent",
+          "target": "指定なし",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Indifferent",
+          "control": "indifferent_button",
+          "ocr_box": [
+            1466,
+            420,
+            114,
+            20
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 16,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "resource": "demo/MethodPropertiesManager/Resources/ja.lproj/methodPropertiesJA.xlf",
+          "resname": "MPM_Count",
+          "control": "Text3",
+          "ocr_box": [
+            348,
+            842,
+            101,
+            26
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 18,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        },
+        {
+          "line": 17,
+          "source": "Close",
+          "target": "閉じる",
+          "resource": "4D/CommonJA.xlf",
+          "resname": "CommonClose",
+          "control": "Button2",
+          "ocr_box": [
+            1489,
+            846,
+            65,
+            20
+          ],
+          "erase_draw_masks": null,
+          "declared_font": {
+            "family": "Arial",
+            "size_pt": 13,
+            "weight": "regular"
+          },
+          "resolved_japanese_font": null
+        }
+      ]
+    }
+  ]
+}

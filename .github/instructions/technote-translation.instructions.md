@@ -190,6 +190,19 @@ submodule is updated. Reusable procedures belong in that skill, not in this refe
 - Review replacements on contact sheets and at native resolution, then spot-check the rebuilt PDF. Keep
   checkpoint 4: mechanical translation does not remove editorial approval.
 
+For this note's demo screenshots (06–09), prepare line-aligned labels and provenance with:
+
+```sh
+.venv/bin/python tools/prepare_demo_screenshot_labels.py \
+  --app "/Applications/4D 20.8/4D.app" --write-new \
+  --output figures/localisation/demo-labels.json
+```
+
+This reads the approved demo XLIFF and 4D's `CommonClose`, preserves method identifiers, and refuses to overwrite
+edited target files. It does not render images or enable replacements. The provenance records declared fonts
+separately from unresolved Japanese fallback and historical native title rendering; those gates remain open.
+Keep code-only figures 03 and 10 unchanged. Figures 01, 02, 04 and 05 still require native-UI evidence.
+
 ## Reassembly (`tools/build.py`)
 
 1. Check: code blocks are compared by position, ```` ```text ```` blocks are skipped, and the sets of figure
