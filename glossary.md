@@ -37,8 +37,33 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
+| method property | メソッドプロパティ | 4DのUI表記に合わせ、一般的なpropertyは「プロパティ」とします。 |
+| property / attribute | プロパティ / 属性 | 本文のpropertyとattributeを区別します。コマンド名や属性値は変更しません。 |
+| Explorer | エクスプローラー | 4D 20.8：`ExplorerJA.xlf`、`Explorer`（ID 1）。 |
+| Code Editor | コードエディター | メソッドを編集するエディター。 |
+| Method Properties | メソッドプロパティ | 4D 20.8：`ExplorerJA.xlf`、`Exp_MethodProperties`。原文の末尾の三点リーダーは画面に従います。 |
+| Edit Properties... | プロパティを編集... | 4D 20.8：`ExplorerMenusJA.xlf`、`exploProperties`（ID 56、5、93、112）。本文では操作名として「プロパティを編集」と表記します。 |
+| batch setting of attributes | 属性の一括設定 | 4D 20.8：`ExplorerMenusJA.xlf`、`exploBatch`（ID 57、94）の「属性の一括設定...」。ネイティブダイアログのタイトルはスクリーンショットの確認時に別途照合します。 |
+| preemptive | プリエンプティブ | 4D公式用語。属性値`capable`、`incapable`、`indifferent`は変更しません。 |
+| interpreted mode | インタープリターモード | 4D 20.8：`BuildAppJA.xlf`、`Build_App_Log_Interpreted`。コンパイル済みの実行モードと区別します。 |
+| standalone | スタンドアロン | ローカルの4Dでの実行。 |
+| Boolean | ブール型 | `True`と`False`は値として原文の表記を維持します。 |
+| filter | フィルター | メソッド一覧の絞り込み条件。 |
+| naming convention | 命名規則 | `Web`、`Web@`は例示文字列として変更しません。 |
+| Execute / Execute Method | 実行 / メソッドを実行 | 4D 20.8：`ToolBarJA.xlf`の`TB_Execute`、`4DClientJA.xlf`の`common_STR#1029:1`と`:2`。 |
+| Apply / Remove | Apply / Remove | デモの現行ボタン名。本文では「適用」「解除」と意味を補足します。デモ側の承認済み翻訳ができるまでは画面の名称を置き換えません。 |
+| capable / incapable / indifferent | capable / incapable / indifferent | プリエンプティブ属性の値。識別子として原文を維持します。 |
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Method Properties Manager | Method Properties Manager | コンポーネントの固有名。原文のProperties Manager Component、Method Property Manager Componentもこの名前に統一します。 |
+| 4D / 4D Inc. | 4D / 4D Inc. | 製品名・会社名を維持します。 |
+| Elliott Jensen | Elliott Jensen | 著者名を維持します。肩書きは「テクニカルサービスエンジニア」と訳します。 |
+| Technical Note 24-12 | テクニカルノート24-12 | 文書番号を維持します。 |
+| Visual Studio Code | Visual Studio Code | 製品名を維持します。 |
+| Components / .4dbase / .4dm | Components / .4dbase / .4dm | フォルダー名・拡張子を維持します。 |
+| open_property_manager | open_property_manager | 実行するメソッドの識別子を維持します。 |
+| METHOD GET ATTRIBUTE / METHOD SET ATTRIBUTE | METHOD GET ATTRIBUTE / METHOD SET ATTRIBUTE | コマンド表記と参照URLは原文どおり。翻訳では綴りを修正しません。 |
+| Web / Web@ | Web / Web@ | 命名規則と検索条件の例を維持します。 |
