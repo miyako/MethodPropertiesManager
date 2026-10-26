@@ -201,7 +201,8 @@ For this note's demo screenshots (06–09), prepare line-aligned labels and prov
 This reads the approved demo XLIFF and 4D's `CommonClose`, preserves method identifiers, and refuses to overwrite
 edited target files. It does not render images or enable replacements. The provenance records declared fonts
 separately from unresolved Japanese fallback and historical native title rendering; those gates remain open.
-Keep code-only figures 03 and 10 unchanged. Figures 01, 02, 04 and 05 still require native-UI evidence.
+Keep program code and identifiers untranslated. Figure 10 stays unchanged; figure 03 now uses an
+editor-supplied native capture crop as documented below. Originals always remain untouched.
 
 The editor requested a Hiragino Sans trial. Render it with
 `.venv/bin/python tools/render_demo_screenshots.py --write-new`, then
@@ -215,7 +216,8 @@ copying its original rounded corners and repeating straight-stroke pixels withou
 Its erasure/draw masks include the explicitly approved annotation change; other protected pixels stay intact.
 
 For native dialogs 01, 04 and 05, the editor authorised 4D 20.8 Japanese resources and Hiragino Sans review
-approximations. Their mechanically reviewed replacements are included in the review PDF, pending checkpoint 4.
+approximations. Their replacements are included in the review PDF; the editor approved them with
+“images are good” on 2026-10-26.
 They are **not** historical native captures: the source 4D/macOS build and scale remain unknown.
 Replay the task-specific renderer without overwriting edited artifacts:
 
@@ -231,10 +233,25 @@ Native text restoration accounts for antialiasing/shadows; figure 05's dithered 
 untouched row-gradient strip only under the source glyphs and a one-pixel halo, recorded separately.
 Japanese explanatory text uses upright Hiragino Sans W3, not synthetic Latin italics.
 
-Exit code 2 currently reports **figure 02 blocked**: its complete Japanese documentation menu command and
-tab caption exceed the existing control widths (301px/232px and 180px/150px, respectively). Its original stays
-enabled. Do not shrink, abbreviate, widen the menu/tab, or obscure additional code without the editor's
-approval or a reviewed matching native capture. Figures 03 and 10 remain unchanged code screenshots.
+The former figure 02 fit problem is resolved by the editor's **native Japanese captures**, supplied on
+2026-10-26. `figures/localisation/captures/captures.json` records their hashes, provenance and framing:
+
+- Figure 02 uses the supplied Explorer PNG byte-for-byte, including its actual menu geometry, highlighted
+  Properties command, current project/method names and native `ドキュメント` tab. It is not a repaint using
+  the longer historical 4D 20.8 resource candidate. Its dimensions are 1292×1124 rather than 1047×908;
+  the original PDF placement width stays 342.9pt.
+- Figure 03 crops the supplied method-editor capture to `[0, 122, 1210, 244]`: the toolbar and first declaration,
+  matching the subject of the original cropped figure. The crop is pixel-exact, with no rescaling or code
+  painting. The complete native capture is retained as `figures/localisation/captures/fig-03-native.png`.
+  RGBA, sRGB intent and DPI are preserved; non-rendering EXIF/XMP are omitted only from the crop.
+
+The native captures' exact application/OS builds and fonts are not assumed to be those of the local 4D 20.8
+installation. Their changed window state is supplied by the editor, not generated data. No red annotations
+are added. Figure 10 and all English original images remain untouched.
+
+The native renderer now validates both captures and the exact crop replay and exits successfully with zero
+blocked figures. The old English menu/tab fit measurements remain under `mechanical_fit_diagnostic` for
+provenance only; they are not active blockers. Keep checkpoint 4 for review of the updated PDF.
 
 ## Reassembly (`tools/build.py`)
 

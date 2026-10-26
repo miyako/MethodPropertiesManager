@@ -1,7 +1,7 @@
 {
   "app": "/Applications/4D 20.8/4D.app",
   "app_version": "20.8 build 20.101985",
-  "editorial_approval": "then go: 4D 20.8 Japanese strings and Hiragino Sans review approximations",
+  "editorial_approval": "Editor accepted figures 01/04/05: images are good (2026-10-26)",
   "historical_native_rendering": "not claimed; original application build, OS and scale unknown",
   "typography": "Fixed source-scale Hiragino Sans W3/W6 trials; no fitting by shrinking or abbreviation. Japanese explanatory text uses upright W3, not synthetic Latin italics.",
   "shaping": "Pillow FreeType BASIC; horizontal Japanese/Latin, no combining marks; CoreText glyph coverage",
@@ -28,7 +28,7 @@
   "figures": [
     {
       "figure": "fig-01",
-      "status": "editor_authorised_approximation_pending_checkpoint_4",
+      "status": "editor_approved_approximation",
       "original_sha256": "97ba009b3ac2be5ac27349faed9f884ce8be15e04f899c0cd343dc9f8652386f",
       "dimensions_px": [
         784,
@@ -997,7 +997,7 @@
     },
     {
       "figure": "fig-04",
-      "status": "editor_authorised_approximation_pending_checkpoint_4",
+      "status": "editor_approved_approximation",
       "original_sha256": "4ef80b94e07f3fa790b6c061f9b29ff22591028473fd889435a4b1a5f750c92c",
       "dimensions_px": [
         880,
@@ -1547,7 +1547,7 @@
     },
     {
       "figure": "fig-05",
-      "status": "editor_authorised_approximation_pending_checkpoint_4",
+      "status": "editor_approved_approximation",
       "original_sha256": "9d8ecbb68153e7bfd01cdea406e003abce1e00da849f9dd73536a62265ae927e",
       "dimensions_px": [
         814,
@@ -2083,11 +2083,11 @@
       }
     }
   ],
-  "blocked": [
+  "mechanical_fit_diagnostic": [
     {
       "figure": "fig-02",
       "original_sha256": "54f46774a26d21aabedb015d06de1db8ebe270c7872dcd686a75880a0780431c",
-      "reason": "Complete official labels exceed the existing menu and Documentation tab. No shrinking, abbreviation, menu widening or tab resizing has been authorised.",
+      "reason": "Complete official labels exceed the original English menu/tab widths. Mechanical resizing or label shortening is not performed.",
       "labels": [
         {
           "resource": {
@@ -2140,9 +2140,11 @@
           "available_width_px": 150
         }
       ],
-      "replacement_enabled": false
+      "mechanical_replacement_enabled": false
     }
   ],
+  "reviewed_native_captures": "figures/localisation/captures/captures.json",
+  "blocked": [],
   "replay_command": [
     ".venv/bin/python",
     "tools/render_native_screenshots.py",

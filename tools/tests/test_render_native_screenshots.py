@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from PIL import Image, ImageChops
@@ -60,6 +61,35 @@ class NativeErasureTest(unittest.TestCase):
             self.assertEqual(unit["languages"]["target-language"], "ja")
 
 
+class EditorCaptureTest(unittest.TestCase):
+    def test_supplied_captures_replay_without_rescaling_or_painted_code(self):
+        records = native.native_captures()
+        self.assertEqual([record["figure"] for record in records], ["fig-02", "fig-03"])
+        for record in records:
+            with self.subTest(figure=record["figure"]):
+                with Image.open(native.ROOT / record["capture"]) as capture:
+                    with Image.open(native.ROOT / record["output"]) as output:
+                        expected = capture.crop(record["crop"]) if record["crop"] else capture
+                        self.assertEqual(output.mode, capture.mode)
+                        self.assertEqual(output.tobytes(), expected.tobytes())
+                        self.assertEqual(output.info["srgb"], capture.info["srgb"])
+                        self.assertEqual(output.info["dpi"], capture.info["dpi"])
+        self.assertEqual(
+            records[1]["code"],
+            (native.ROOT / "figures/fig-03.en.txt").read_text().splitlines()[-1],
+        )
+
+    def test_stale_capture_hash_is_an_error_not_a_silent_fallback(self):
+        manifest = json.loads((native.ROOT / native.CAPTURES).read_text())
+        manifest["captures"][0]["output_sha256"] = "0" * 64
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "captures.json"
+            path.write_text(json.dumps(manifest))
+            with patch.object(native, "CAPTURES", path):
+                with self.assertRaisesRegex(ValueError, "Edited native capture artifact"):
+                    native.native_captures()
+
+
 @unittest.skipUnless(sys.platform == "darwin", "Requires the approved local 4D/Hiragino installation")
 class NativeScreenshotTest(unittest.TestCase):
     @classmethod
@@ -114,15 +144,17 @@ class NativeScreenshotTest(unittest.TestCase):
                 for kind, mask in [("erase", erase), ("draw", draw)]:
                     self.assertEqual(native.encode(mask), (native.ROOT / record["masks"][kind]).read_bytes())
 
-    def test_explorer_stays_explicitly_blocked_without_clipping_or_control_resizing(self):
+    def test_native_explorer_capture_supersedes_the_historical_mechanical_fit_blocker(self):
         report = native.blocked_explorer(self.app, self.paths)
-        self.assertFalse(report["replacement_enabled"])
+        self.assertFalse(report["mechanical_replacement_enabled"])
         self.assertEqual(len(report["labels"]), 2)
         for label in report["labels"]:
             self.assertGreater(label["full_label_width_px"], label["available_width_px"])
         layout = json.loads((native.ROOT / "figures/layout/fig-02.json").read_text())
-        self.assertNotIn("replace", layout)
-        self.assertFalse((native.ROOT / "figures/fig-02-ja.png").exists())
+        self.assertEqual(layout["replace"], "fig-02-ja.png")
+        self.assertEqual(self.report["blocked"], [])
+        self.assertEqual(self.report["reviewed_native_captures"], str(native.CAPTURES))
+        self.assertTrue(any(record["figure"] == "fig-02" for record in native.native_captures()))
 
 
 if __name__ == "__main__":

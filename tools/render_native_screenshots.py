@@ -12,7 +12,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 import PIL
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, features
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, PngImagePlugin, features
 
 from render_demo_screenshots import (
     FigureFitError, changed_pixels, erase_text, load_fonts, write_new_bytes,
@@ -20,6 +20,7 @@ from render_demo_screenshots import (
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = Path("figures/localisation/native-hiragino")
+CAPTURES = Path("figures/localisation/captures/captures.json")
 METHOD = "Internal Components/development.4dbase/Resources/ja.lproj/MethodEditorJA.xlf"
 COMMON = "ja.lproj/CommonJA.xlf"
 EXECUTE = "ja.lproj/4DClientJA.xlf"
@@ -296,7 +297,7 @@ def render(stem, app, paths):
     if ImageChops.multiply(changed, ImageChops.invert(allowed)).getbbox():
         raise ValueError(f"Unexpected nontext changes in {stem}")
     report = dict(
-        figure=stem, status="editor_authorised_approximation_pending_checkpoint_4",
+        figure=stem, status="editor_approved_approximation",
         original_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
         dimensions_px=list(original.size), mode=original.mode,
         changed_pixels=changed.histogram()[255], unexpected_changes=0,
@@ -312,6 +313,34 @@ def encode(image, metadata=None):
     stream = io.BytesIO()
     image.save(stream, format="PNG", compress_level=9, **(metadata or {}))
     return stream.getvalue()
+
+
+def native_captures():
+    records = json.loads((ROOT / CAPTURES).read_text())["captures"]
+    for record in records:
+        stem = record["figure"]
+        for name, path in [("capture", record["capture"]), ("output", record["output"]),
+                           ("original", f"figures/{stem}.png")]:
+            data = (ROOT / path).read_bytes()
+            if hashlib.sha256(data).hexdigest() != record[f"{name}_sha256"]:
+                raise ValueError(f"Edited native capture artifact: {path}")
+            with Image.open(ROOT / path) as image:
+                if list(image.size) != record[f"{name}_dimensions_px"]:
+                    raise ValueError(f"Unexpected capture dimensions: {path}")
+        layout = json.loads((ROOT / f"figures/layout/{stem}.json").read_text())
+        if (layout.get("replace") != Path(record["output"]).name or layout["localize"]
+                or layout["width_pt"] != record["width_pt"]):
+            raise ValueError(f"Native capture layout differs from the reviewed placement: {stem}")
+        data = (ROOT / record["capture"]).read_bytes()
+        if record["crop"]:
+            with Image.open(ROOT / record["capture"]) as source:
+                cropped = source.crop(record["crop"])
+                metadata = PngImagePlugin.PngInfo()
+                metadata.add(b"sRGB", bytes([source.info["srgb"]]))
+                data = encode(cropped, dict(pnginfo=metadata, dpi=source.info["dpi"]))
+        if data != (ROOT / record["output"]).read_bytes():
+            raise ValueError(f"Native capture/crop does not replay exactly: {stem}")
+    return records
 
 
 def blocked_explorer(app, paths):
@@ -343,9 +372,9 @@ def blocked_explorer(app, paths):
                            full_label_width_px=width, available_width_px=specification["available_width"]))
     path = ROOT / "figures/fig-02.png"
     return dict(figure="fig-02", original_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
-                reason="Complete official labels exceed the existing menu and Documentation tab. "
-                       "No shrinking, abbreviation, menu widening or tab resizing has been authorised.",
-                labels=labels, replacement_enabled=False)
+                reason="Complete official labels exceed the original English menu/tab widths. "
+                       "Mechanical resizing or label shortening is not performed.",
+                labels=labels, mechanical_replacement_enabled=False)
 
 
 def main():
@@ -362,7 +391,11 @@ def main():
                    for regions in REGIONS.values() for specification in regions)
     text += "ドキュメンテーションを編集..."
     paths, fonts = load_fonts(text)
-    payloads, reports, blocked = {}, [], [blocked_explorer(args.app, paths)]
+    captures = native_captures()
+    diagnostic = blocked_explorer(args.app, paths)
+    payloads, reports, blocked = {}, [], []
+    if not any(record["figure"] == "fig-02" for record in captures):
+        blocked.append(diagnostic)
     for stem in REGIONS:
         try:
             image, erase, draw, metadata, report = render(stem, args.app, paths)
@@ -382,13 +415,14 @@ def main():
         reports.append(report)
     report = dict(
         app=str(args.app), app_version=version,
-        editorial_approval="then go: 4D 20.8 Japanese strings and Hiragino Sans review approximations",
+        editorial_approval="Editor accepted figures 01/04/05: images are good (2026-10-26)",
         historical_native_rendering="not claimed; original application build, OS and scale unknown",
         typography="Fixed source-scale Hiragino Sans W3/W6 trials; no fitting by shrinking or abbreviation. "
                    "Japanese explanatory text uses upright W3, not synthetic Latin italics.",
         shaping="Pillow FreeType BASIC; horizontal Japanese/Latin, no combining marks; CoreText glyph coverage",
         pillow_version=PIL.__version__, freetype_version=features.version_module("freetype2"),
-        fonts=fonts, figures=reports, blocked=blocked,
+        fonts=fonts, figures=reports, mechanical_fit_diagnostic=[diagnostic],
+        reviewed_native_captures=str(CAPTURES), blocked=blocked,
         replay_command=[".venv/bin/python", "tools/render_native_screenshots.py", "--write-new"],
     )
     payloads[ARTIFACTS / "render.json"] = (json.dumps(report, ensure_ascii=False, indent=2) + "\n").encode()

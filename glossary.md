@@ -46,6 +46,7 @@ omit the technical-note number from the Japanese cover only.
 | Code Editor | メソッドエディター | 編集者指定の用語。本文全体で統一します。 |
 | Method Properties | メソッドプロパティ | 4D 20.8：メニューは`ExplorerJA.xlf`の`Exp_MethodProperties`、ダイアログタイトルは開発コンポーネントの`MethodEditorJA.xlf`、`Proc_info_windowTitle`。原文の末尾の三点リーダーは画面に従います。 |
 | Edit Properties... | プロパティを編集... | 4D 20.8：`ExplorerMenusJA.xlf`、`exploProperties`（ID 56、5、93、112）。本文では操作名として「プロパティを編集」と表記します。 |
+| Documentation (Explorer tab) | ドキュメント | 編集者提供の日本語ネイティブキャプチャ（2026-10-26、図02）の実表示。4D 20.8の`Exp_Comments`にある長い候補「ドキュメンテーション」で画像を描き替えません。 |
 | batch setting of attributes | 属性の一括設定 | 4D 20.8：`ExplorerMenusJA.xlf`、`exploBatch`（ID 57、94）の「属性の一括設定...」。機能名とダイアログタイトルの「メソッド属性」を区別します。 |
 | Attributes for methods | メソッド属性 | 4D 20.8開発コンポーネント：`MethodEditorJA.xlf`、`Proc_Info_All_windowTitle`。図04のタイトル。 |
 | Name: / Matching method name: / Value: | 名称: / 一致するメソッド名: / 値: | `MethodEditorJA.xlf`の`Proc_info_Name`、`Proc_info_matchingMethodName`、`Proc_info_value`。画面内ではリソースの半角コロンを維持します。 |
