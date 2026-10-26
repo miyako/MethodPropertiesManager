@@ -4,7 +4,7 @@ var $read; $write; $result; $languageResult : Object
 var $ids; $methods; $filtered; $englishKeys : Collection
 var $i : Integer
 
-$ids:=New collection("MPM_WindowTitle"; "MPM_FilterLabel"; "MPM_EditLabel"; "MPM_Methods"; "MPM_Count"; "MPM_Apply"; "MPM_Remove"; "MPM_Capable"; "MPM_Incapable"; "MPM_Indifferent"; "MPM_CompiledError"; "MPM_LocalError"; "MPM_CompiledLocalError")
+$ids:=New collection("MPM_WindowTitle"; "MPM_FilterLabel"; "MPM_EditLabel"; "MPM_Methods"; "MPM_Count"; "MPM_Apply"; "MPM_Remove"; "MPM_Capable"; "MPM_Incapable"; "MPM_Indifferent"; "MPM_HostProtectedError"; "MPM_CompiledError"; "MPM_LocalError"; "MPM_CompiledLocalError")
 $methods:=New collection("MPM_choices"; "open_property_manager")
 $result:=New object("success"; True; "languages"; New collection)
 
@@ -40,12 +40,14 @@ For each ($language; New collection("en"; "ja"))
 		$englishKeys:=$read.keys
 		ASSERT($read.values[0]="Any"; "English Any")
 		ASSERT(MPM_text("MPM_WindowTitle")="Method Properties Manager"; "English title")
+		ASSERT(MPM_text("MPM_HostProtectedError")="The host database is write-protected. The Method Properties Manager component requires a writable host database."; "English host protection error")
 	Else
 		ASSERT(JSON Stringify($read.keys)=JSON Stringify($englishKeys); "Language must not change property keys")
 		ASSERT($read.values[0]="すべて"; "Japanese Any")
 		ASSERT(MPM_text("MPM_WindowTitle")="メソッドプロパティマネージャー"; "Japanese title")
 		ASSERT(MPM_text("MPM_Apply")="適用"; "Japanese Apply")
 		ASSERT(MPM_text("MPM_Remove")="解除"; "Japanese Remove")
+		ASSERT(MPM_text("MPM_HostProtectedError")="ホストデータベースは書き込み禁止です。メソッドプロパティマネージャーは書き込み可能なホストデータベースで実行してください。"; "Japanese host protection error")
 		ASSERT(Position(Char(13); MPM_text("MPM_EditLabel"))>0; "Japanese multiline label keeps CR")
 	End if
 	$filtered:=update_display("Any"; $methods)

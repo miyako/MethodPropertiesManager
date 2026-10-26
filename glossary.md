@@ -61,6 +61,7 @@ omit the technical-note number from the Japanese cover only.
 | Invisible / Shared | 非表示 / 共有 | デモのプロパティ選択肢。4D本体のダイアログは、対応するリソースを別途確認します。 |
 | Published Web / SOAP / WSDL / SQL | Web公開 / SOAP公開 / WSDL公開 / SQL公開 | デモのプロパティ選択肢。保存する属性名は変更しません。 |
 | Executed on Server | サーバー上で実行 | デモのプロパティ選択肢。 |
+| write-protected host database | 書き込み禁止のホストデータベース | `MPM_HostProtectedError`の警告で使用します。 |
 
 ## Proper nouns in examples
 

@@ -2,6 +2,10 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file datatype="plaintext" original="messages" source-language="en" target-language="en">
     <body>
+      <trans-unit id="MPM_HostProtectedError" resname="MPM_HostProtectedError">
+        <source>The host database is write-protected. The Method Properties Manager component requires a writable host database.</source>
+        <target>The host database is write-protected. The Method Properties Manager component requires a writable host database.</target>
+      </trans-unit>
       <trans-unit id="MPM_CompiledError" resname="MPM_CompiledError">
         <source>The application is compiled. The Method Properties Manager component requires interpreted mode.</source>
         <target>The application is compiled. The Method Properties Manager component requires interpreted mode.</target>
