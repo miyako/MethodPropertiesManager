@@ -203,6 +203,15 @@ edited target files. It does not render images or enable replacements. The prove
 separately from unresolved Japanese fallback and historical native title rendering; those gates remain open.
 Keep code-only figures 03 and 10 unchanged. Figures 01, 02, 04 and 05 still require native-UI evidence.
 
+The editor requested a Hiragino Sans trial. Render it with
+`.venv/bin/python tools/render_demo_screenshots.py --write-new`, then
+`make review-draft FIGS="06 08 09"`. The renderer verifies local W3/W6 faces and glyph coverage through
+CoreText, preserves protected pixels, and records replay/masks under `figures/localisation/hiragino/`.
+Exit code 2 means a reported figure is blocked by a fit problem; it does not silently substitute an English
+image. Figure 07's full Japanese filter label crosses its red annotation at the source scale, so leave that
+figure unchanged until the editor approves an annotation or wording adjustment. Draft images do not become
+PDF replacements until their visual review is approved.
+
 ## Reassembly (`tools/build.py`)
 
 1. Check: code blocks are compared by position, ```` ```text ```` blocks are skipped, and the sets of figure

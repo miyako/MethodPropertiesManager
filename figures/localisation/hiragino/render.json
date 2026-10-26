@@ -1,0 +1,1579 @@
+{
+  "status": "hiragino_sans_trial_not_enabled_in_pdf",
+  "editor_font_direction": "try Hiragino Sans",
+  "historical_native_rendering": "not claimed; source OS/build remains unknown",
+  "pixel_scale": "trial sizes use declared 4D point sizes times two",
+  "count_label_position": "uses the approved Japanese form's wider, left-shifted label",
+  "instruction_geometry": "approved two-line XLIFF; 30px line spacing retained from the source",
+  "shaping": "Pillow FreeType BASIC; horizontal Japanese/Latin; all glyphs verified without fallback",
+  "pillow_version": "13.0.0",
+  "freetype_version": "2.14.3",
+  "fonts": {
+    "3": {
+      "postscript_name": "HiraginoSans-W3",
+      "file": "/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc",
+      "file_sha256": "833776a6fd68e2c71c0c52fd8041195bd3d0a336cdb278170b7ad71c7e1b3475",
+      "face_index": 0,
+      "glyph_coverage": "CoreText glyph IDs checked without fallback",
+      "characters_checked": "CMWacdilmnorstw、しじすたつてでなのはべるをィエキジソッテドネパブプマメャリロンー不可定実択持指数次用示編行表複解適選閉除集："
+    },
+    "6": {
+      "postscript_name": "HiraginoSans-W6",
+      "file": "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc",
+      "file_sha256": "790fe535987adc662e83489e162dc54c1e50be8de15169300082f6cc7a082e4e",
+      "face_index": 0,
+      "glyph_coverage": "CoreText glyph IDs checked without fallback",
+      "characters_checked": "CMWacdilmnorstw、しじすたつてでなのはべるをィエキジソッテドネパブプマメャリロンー不可定実択持指数次用示編行表複解適選閉除集："
+    }
+  },
+  "replay_command": [
+    ".venv/bin/python",
+    "tools/render_demo_screenshots.py",
+    "--write-new"
+  ],
+  "figures": [
+    {
+      "figure": "fig-06",
+      "status": "editor_requested_font_trial_requires_visual_review",
+      "original_sha256": "081b314fa6e8138b92540e65fabeeb7a7901e89ee3497a514431b64af17edc76",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "changed_pixels": 34948,
+      "unexpected_changes": 0,
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "resname": "MPM_WindowTitle",
+          "resource_line": null,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "source_erase_region": [
+            694,
+            88,
+            1060,
+            121
+          ],
+          "background_donor_columns": [
+            1200,
+            1205
+          ],
+          "background_colors": [
+            [
+              56,
+              55,
+              54
+            ]
+          ],
+          "foreground": [
+            180,
+            179,
+            178
+          ],
+          "face": "HiraginoSans-W6",
+          "size_px": 26,
+          "baseline_px": 115,
+          "draw_origin": [
+            682,
+            115
+          ],
+          "draw_bounds": [
+            684,
+            91,
+            1071,
+            118
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Methods",
+          "resource_line": null,
+          "source": "Methods",
+          "target": "メソッド",
+          "source_erase_region": [
+            158,
+            181,
+            262,
+            209
+          ],
+          "background_donor_columns": [
+            550,
+            555
+          ],
+          "background_colors": [
+            [
+              46,
+              48,
+              50
+            ]
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "face": "HiraginoSans-W6",
+          "size_px": 24,
+          "baseline_px": 205,
+          "draw_origin": [
+            160,
+            205
+          ],
+          "draw_bounds": [
+            161,
+            185,
+            254,
+            207
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_FilterLabel",
+          "resource_line": null,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "source_erase_region": [
+            632,
+            178,
+            1019,
+            211
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 204,
+          "draw_origin": [
+            632,
+            204
+          ],
+          "draw_bounds": [
+            633,
+            181,
+            1089,
+            206
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_ChoiceAny",
+          "resource_line": null,
+          "source": "Any",
+          "target": "すべて",
+          "source_erase_region": [
+            638,
+            222,
+            696,
+            254
+          ],
+          "background_donor_columns": [
+            800,
+            805
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 247,
+          "draw_origin": [
+            641,
+            247
+          ],
+          "draw_bounds": [
+            643,
+            225,
+            716,
+            249
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_EditLabel",
+          "resource_line": 1,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "source_erase_region": [
+            632,
+            341,
+            1535,
+            371
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 365,
+          "draw_origin": [
+            632,
+            365
+          ],
+          "draw_bounds": [
+            632,
+            342,
+            1089,
+            368
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_EditLabel",
+          "resource_line": 2,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "source_erase_region": [
+            632,
+            372,
+            952,
+            403
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 395,
+          "draw_origin": [
+            632,
+            395
+          ],
+          "draw_bounds": [
+            632,
+            372,
+            1272,
+            398
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_ChoiceAny",
+          "resource_line": null,
+          "source": "Any",
+          "target": "すべて",
+          "source_erase_region": [
+            638,
+            419,
+            696,
+            451
+          ],
+          "background_donor_columns": [
+            800,
+            805
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            641,
+            444
+          ],
+          "draw_bounds": [
+            643,
+            422,
+            716,
+            446
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Apply",
+          "resource_line": null,
+          "source": "Apply",
+          "target": "適用",
+          "source_erase_region": [
+            1084,
+            419,
+            1159,
+            451
+          ],
+          "background_donor_columns": [
+            1054,
+            1059
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1096,
+            444
+          ],
+          "draw_bounds": [
+            1096,
+            421,
+            1146,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Remove",
+          "resource_line": null,
+          "source": "Remove",
+          "target": "解除",
+          "source_erase_region": [
+            1270,
+            419,
+            1374,
+            451
+          ],
+          "background_donor_columns": [
+            1254,
+            1259
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1296,
+            444
+          ],
+          "draw_bounds": [
+            1297,
+            421,
+            1348,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Count",
+          "resource_line": null,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "source_erase_region": [
+            344,
+            837,
+            455,
+            874
+          ],
+          "background_donor_columns": [
+            600,
+            605
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 36,
+          "baseline_px": 869,
+          "draw_origin": [
+            156,
+            869
+          ],
+          "draw_bounds": [
+            159,
+            838,
+            356,
+            872
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "CommonClose",
+          "resource_line": null,
+          "source": "Close",
+          "target": "閉じる",
+          "source_erase_region": [
+            1484,
+            842,
+            1561,
+            873
+          ],
+          "background_donor_columns": [
+            1454,
+            1459
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 867,
+          "draw_origin": [
+            1483,
+            867
+          ],
+          "draw_bounds": [
+            1485,
+            845,
+            1558,
+            870
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        }
+      ],
+      "output": "figures/fig-06-ja.png",
+      "output_sha256": "228b90b8c722afd621d645796b3dd3290b17798a950c5ac14e88e943f93fc16e",
+      "masks": {
+        "erase": "figures/localisation/hiragino/fig-06-erase.png",
+        "draw": "figures/localisation/hiragino/fig-06-draw.png"
+      }
+    },
+    {
+      "figure": "fig-08",
+      "status": "editor_requested_font_trial_requires_visual_review",
+      "original_sha256": "e9e5faae0255568d2893415d130ae35a55bbce4ad92c2d4620de47235256c489",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "changed_pixels": 34948,
+      "unexpected_changes": 0,
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "resname": "MPM_WindowTitle",
+          "resource_line": null,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "source_erase_region": [
+            694,
+            88,
+            1060,
+            121
+          ],
+          "background_donor_columns": [
+            1200,
+            1205
+          ],
+          "background_colors": [
+            [
+              56,
+              55,
+              54
+            ]
+          ],
+          "foreground": [
+            180,
+            179,
+            178
+          ],
+          "face": "HiraginoSans-W6",
+          "size_px": 26,
+          "baseline_px": 115,
+          "draw_origin": [
+            682,
+            115
+          ],
+          "draw_bounds": [
+            684,
+            91,
+            1071,
+            118
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Methods",
+          "resource_line": null,
+          "source": "Methods",
+          "target": "メソッド",
+          "source_erase_region": [
+            158,
+            181,
+            262,
+            209
+          ],
+          "background_donor_columns": [
+            550,
+            555
+          ],
+          "background_colors": [
+            [
+              46,
+              48,
+              50
+            ]
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "face": "HiraginoSans-W6",
+          "size_px": 24,
+          "baseline_px": 205,
+          "draw_origin": [
+            160,
+            205
+          ],
+          "draw_bounds": [
+            161,
+            185,
+            254,
+            207
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_FilterLabel",
+          "resource_line": null,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "source_erase_region": [
+            632,
+            178,
+            1019,
+            211
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 204,
+          "draw_origin": [
+            632,
+            204
+          ],
+          "draw_bounds": [
+            633,
+            181,
+            1089,
+            206
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_ChoiceAny",
+          "resource_line": null,
+          "source": "Any",
+          "target": "すべて",
+          "source_erase_region": [
+            638,
+            222,
+            696,
+            254
+          ],
+          "background_donor_columns": [
+            800,
+            805
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 247,
+          "draw_origin": [
+            641,
+            247
+          ],
+          "draw_bounds": [
+            643,
+            225,
+            716,
+            249
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_EditLabel",
+          "resource_line": 1,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "source_erase_region": [
+            632,
+            341,
+            1535,
+            371
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 365,
+          "draw_origin": [
+            632,
+            365
+          ],
+          "draw_bounds": [
+            632,
+            342,
+            1089,
+            368
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_EditLabel",
+          "resource_line": 2,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "source_erase_region": [
+            632,
+            372,
+            952,
+            403
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 395,
+          "draw_origin": [
+            632,
+            395
+          ],
+          "draw_bounds": [
+            632,
+            372,
+            1272,
+            398
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_ChoiceAny",
+          "resource_line": null,
+          "source": "Any",
+          "target": "すべて",
+          "source_erase_region": [
+            638,
+            419,
+            696,
+            451
+          ],
+          "background_donor_columns": [
+            800,
+            805
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            641,
+            444
+          ],
+          "draw_bounds": [
+            643,
+            422,
+            716,
+            446
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Apply",
+          "resource_line": null,
+          "source": "Apply",
+          "target": "適用",
+          "source_erase_region": [
+            1084,
+            419,
+            1159,
+            451
+          ],
+          "background_donor_columns": [
+            1054,
+            1059
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1096,
+            444
+          ],
+          "draw_bounds": [
+            1096,
+            421,
+            1146,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Remove",
+          "resource_line": null,
+          "source": "Remove",
+          "target": "解除",
+          "source_erase_region": [
+            1270,
+            419,
+            1374,
+            451
+          ],
+          "background_donor_columns": [
+            1254,
+            1259
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1296,
+            444
+          ],
+          "draw_bounds": [
+            1297,
+            421,
+            1348,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Count",
+          "resource_line": null,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "source_erase_region": [
+            344,
+            837,
+            455,
+            874
+          ],
+          "background_donor_columns": [
+            600,
+            605
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 36,
+          "baseline_px": 869,
+          "draw_origin": [
+            156,
+            869
+          ],
+          "draw_bounds": [
+            159,
+            838,
+            356,
+            872
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "CommonClose",
+          "resource_line": null,
+          "source": "Close",
+          "target": "閉じる",
+          "source_erase_region": [
+            1484,
+            842,
+            1561,
+            873
+          ],
+          "background_donor_columns": [
+            1454,
+            1459
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 867,
+          "draw_origin": [
+            1483,
+            867
+          ],
+          "draw_bounds": [
+            1485,
+            845,
+            1558,
+            870
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        }
+      ],
+      "output": "figures/fig-08-ja.png",
+      "output_sha256": "f7010d337b4cb836421cbd823f122ecc14901cb97376fe08a1d8b1b20bbc0f0f",
+      "masks": {
+        "erase": "figures/localisation/hiragino/fig-08-erase.png",
+        "draw": "figures/localisation/hiragino/fig-08-draw.png"
+      }
+    },
+    {
+      "figure": "fig-09",
+      "status": "editor_requested_font_trial_requires_visual_review",
+      "original_sha256": "855321eb5bb104ea3387d4bcb07dca91a1c74e5d1ea1c6c91799f58af28a8728",
+      "dimensions_px": [
+        1754,
+        1066
+      ],
+      "changed_pixels": 39281,
+      "unexpected_changes": 0,
+      "replacement_enabled": false,
+      "labels": [
+        {
+          "resname": "MPM_WindowTitle",
+          "resource_line": null,
+          "source": "Method Properties Manager",
+          "target": "メソッドプロパティマネージャー",
+          "source_erase_region": [
+            694,
+            88,
+            1060,
+            121
+          ],
+          "background_donor_columns": [
+            1200,
+            1205
+          ],
+          "background_colors": [
+            [
+              56,
+              55,
+              54
+            ]
+          ],
+          "foreground": [
+            180,
+            179,
+            178
+          ],
+          "face": "HiraginoSans-W6",
+          "size_px": 26,
+          "baseline_px": 115,
+          "draw_origin": [
+            682,
+            115
+          ],
+          "draw_bounds": [
+            684,
+            91,
+            1071,
+            118
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Methods",
+          "resource_line": null,
+          "source": "Methods",
+          "target": "メソッド",
+          "source_erase_region": [
+            158,
+            181,
+            262,
+            209
+          ],
+          "background_donor_columns": [
+            550,
+            555
+          ],
+          "background_colors": [
+            [
+              46,
+              48,
+              50
+            ]
+          ],
+          "foreground": [
+            255,
+            255,
+            255
+          ],
+          "face": "HiraginoSans-W6",
+          "size_px": 24,
+          "baseline_px": 205,
+          "draw_origin": [
+            160,
+            205
+          ],
+          "draw_bounds": [
+            161,
+            185,
+            254,
+            207
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_FilterLabel",
+          "resource_line": null,
+          "source": "Show methods with this property:",
+          "target": "次のプロパティを持つメソッドを表示：",
+          "source_erase_region": [
+            632,
+            178,
+            1019,
+            211
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 204,
+          "draw_origin": [
+            632,
+            204
+          ],
+          "draw_bounds": [
+            633,
+            181,
+            1089,
+            206
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_ChoiceAny",
+          "resource_line": null,
+          "source": "Any",
+          "target": "すべて",
+          "source_erase_region": [
+            638,
+            222,
+            696,
+            254
+          ],
+          "background_donor_columns": [
+            800,
+            805
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 247,
+          "draw_origin": [
+            641,
+            247
+          ],
+          "draw_bounds": [
+            643,
+            225,
+            716,
+            249
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_EditLabel",
+          "resource_line": 1,
+          "source": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac",
+          "target": "選択したメソッドのプロパティを編集：",
+          "source_erase_region": [
+            632,
+            341,
+            1535,
+            371
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 365,
+          "draw_origin": [
+            632,
+            365
+          ],
+          "draw_bounds": [
+            632,
+            342,
+            1089,
+            368
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_EditLabel",
+          "resource_line": 2,
+          "source": "to select multiple methods):",
+          "target": "複数選択はWindowsではCtrlキー、MacではCmdキー",
+          "source_erase_region": [
+            632,
+            372,
+            952,
+            403
+          ],
+          "background_donor_columns": [
+            1625,
+            1630
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 395,
+          "draw_origin": [
+            632,
+            395
+          ],
+          "draw_bounds": [
+            632,
+            372,
+            1272,
+            398
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_ChoicePreemptive",
+          "resource_line": null,
+          "source": "Preemptive",
+          "target": "プリエンプティブ実行",
+          "source_erase_region": [
+            638,
+            418,
+            780,
+            452
+          ],
+          "background_donor_columns": [
+            800,
+            805
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            641,
+            444
+          ],
+          "draw_bounds": [
+            644,
+            420,
+            900,
+            447
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Capable",
+          "resource_line": null,
+          "source": "Capable",
+          "target": "実行可",
+          "source_erase_region": [
+            1068,
+            418,
+            1174,
+            451
+          ],
+          "background_donor_columns": [
+            1054,
+            1059
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1083,
+            444
+          ],
+          "draw_bounds": [
+            1084,
+            421,
+            1160,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Incapable",
+          "resource_line": null,
+          "source": "Incapable",
+          "target": "実行不可",
+          "source_erase_region": [
+            1262,
+            418,
+            1382,
+            451
+          ],
+          "background_donor_columns": [
+            1254,
+            1259
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1270,
+            444
+          ],
+          "draw_bounds": [
+            1271,
+            421,
+            1373,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Indifferent",
+          "resource_line": null,
+          "source": "Indifferent",
+          "target": "指定なし",
+          "source_erase_region": [
+            1461,
+            416,
+            1586,
+            448
+          ],
+          "background_donor_columns": [
+            1454,
+            1459
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 444,
+          "draw_origin": [
+            1470,
+            444
+          ],
+          "draw_bounds": [
+            1471,
+            421,
+            1571,
+            447
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "MPM_Count",
+          "resource_line": null,
+          "source": "Count:",
+          "target": "メソッド数：",
+          "source_erase_region": [
+            344,
+            837,
+            455,
+            874
+          ],
+          "background_donor_columns": [
+            600,
+            605
+          ],
+          "background_colors": [
+            [
+              42,
+              40,
+              38
+            ]
+          ],
+          "foreground": [
+            223,
+            222,
+            222
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 36,
+          "baseline_px": 869,
+          "draw_origin": [
+            156,
+            869
+          ],
+          "draw_bounds": [
+            159,
+            838,
+            356,
+            872
+          ],
+          "alignment": "left",
+          "source_glyph_residual_pixels": 0
+        },
+        {
+          "resname": "CommonClose",
+          "resource_line": null,
+          "source": "Close",
+          "target": "閉じる",
+          "source_erase_region": [
+            1484,
+            842,
+            1561,
+            873
+          ],
+          "background_donor_columns": [
+            1454,
+            1459
+          ],
+          "background_colors": [
+            [
+              95,
+              94,
+              92
+            ]
+          ],
+          "foreground": [
+            231,
+            231,
+            230
+          ],
+          "face": "HiraginoSans-W3",
+          "size_px": 26,
+          "baseline_px": 867,
+          "draw_origin": [
+            1483,
+            867
+          ],
+          "draw_bounds": [
+            1485,
+            845,
+            1558,
+            870
+          ],
+          "alignment": "center",
+          "source_glyph_residual_pixels": 0
+        }
+      ],
+      "output": "figures/fig-09-ja.png",
+      "output_sha256": "3f4e8156c5a1f86c3cffd7763a66b4497b98e97b74365829d024e5c88222560a",
+      "masks": {
+        "erase": "figures/localisation/hiragino/fig-09-erase.png",
+        "draw": "figures/localisation/hiragino/fig-09-draw.png"
+      }
+    }
+  ],
+  "blocked": [
+    {
+      "figure": "fig-07",
+      "reason": "fig-07: MPM_FilterLabel at 26px crosses a protected annotation/control",
+      "resname": "MPM_FilterLabel",
+      "size_px": 26,
+      "text_advance_px": 468.0,
+      "draw_bounds": [
+        633,
+        181,
+        1089,
+        206
+      ],
+      "collision_bounds": [
+        1030,
+        181,
+        1040,
+        206
+      ]
+    }
+  ]
+}
