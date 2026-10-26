@@ -6,6 +6,7 @@ var $window; $i; $left; $top; $right; $bottom : Integer
 Case of 
 	: (Get database parameter:C643(Is host database writable:K37:103)=0)
 		ALERT:C41(MPM_text("MPM_HostProtectedError"))
+		return
 	: (Is compiled mode:C492(*) & (Application type:C494#4D Local mode:K5:1))
 		ALERT:C41(MPM_text("MPM_CompiledLocalError"))
 		return 
