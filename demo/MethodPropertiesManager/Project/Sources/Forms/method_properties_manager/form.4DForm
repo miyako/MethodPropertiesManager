@@ -1,0 +1,240 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 260,
+					"top": 42,
+					"width": 178,
+					"height": 25,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.property_read",
+					"dataSourceTypeHint": "object",
+					"method": "ObjectMethods/Popup Dropdown List.4dm",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"left": 260,
+					"top": 140,
+					"width": 178,
+					"height": 20,
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.property_write",
+					"dataSourceTypeHint": "integer",
+					"method": "ObjectMethods/Popup Dropdown List1.4dm",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Show methods with this property:",
+					"top": 23,
+					"left": 260,
+					"width": 222,
+					"height": 16,
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac to select multiple methods):",
+					"top": 104,
+					"left": 260,
+					"width": 450,
+					"height": 31,
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"apply_button": {
+					"type": "button",
+					"text": "Apply",
+					"top": 140,
+					"left": 465,
+					"width": 80,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/apply_button.4dm",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Close",
+					"top": 352,
+					"left": 665,
+					"width": 80,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"action": "cancel",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 22,
+					"top": 23,
+					"width": 212,
+					"height": 314,
+					"events": [
+						"onDoubleClick",
+						"onHeaderClick"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.method_names",
+					"selectedItemsSource": "Form:C1466.selected_methods",
+					"showHeaders": true,
+					"focusable": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/List Box.4dm",
+					"currentItemSource": "Form:C1466.selected_method",
+					"resizingMode": "legacy",
+					"sortable": true,
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"columns": [
+						{
+							"header": {
+								"text": "Methods",
+								"name": "Header1",
+								"dataSource": "Form:C1466.column_sort",
+								"textAlign": "left",
+								"verticalAlign": "middle",
+								"fontWeight": "bold"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.value",
+							"width": 348,
+							"enterable": false
+						}
+					]
+				},
+				"remove_button": {
+					"type": "button",
+					"text": "Remove",
+					"top": 140,
+					"left": 565,
+					"width": 80,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/remove_button.4dm",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"capable_button": {
+					"type": "button",
+					"text": "Capable",
+					"top": 140,
+					"left": 465,
+					"width": 80,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/capable_button.4dm",
+					"visibility": "visible",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"incapable_button": {
+					"type": "button",
+					"text": "Incapable",
+					"top": 140,
+					"left": 565,
+					"width": 80,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/incapable_button.4dm",
+					"visibility": "visible",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"indifferent_button": {
+					"type": "button",
+					"text": "Indifferent",
+					"top": 139,
+					"left": 665,
+					"width": 80,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/indifferent_button.4dm",
+					"visibility": "visible",
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"Input": {
+					"type": "input",
+					"left": 181,
+					"top": 351,
+					"width": 53,
+					"height": 22,
+					"dataSource": "Form:C1466.method_names.length",
+					"fontSize": 18,
+					"enterable": false,
+					"fontFamily": "Arial"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Count:",
+					"top": 352,
+					"left": 117,
+					"width": 67,
+					"height": 16,
+					"fontSize": 18,
+					"fontFamily": "Arial"
+				}
+			}
+		}
+	],
+	"geometryStamp": 150,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

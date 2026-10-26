@@ -1,0 +1,26 @@
+{
+	"Form": {
+		"forms": [
+			"method_properties_manager"
+		]
+	},
+	"Method Properties Manager": {
+		"groups": [
+			"Form",
+			"Methods"
+		]
+	},
+	"Methods": {
+		"methods": [
+			"Compiler_Methods",
+			"open_property_manager",
+			"update_display"
+		]
+	},
+	"Unused": {
+		"tables": [
+			"Example"
+		]
+	},
+	"trash": {}
+}
