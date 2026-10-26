@@ -4,7 +4,10 @@ Keep terminology consistent across `src/<target>.md` and `figures/*.<target>.txt
 Change an entry here first, then search and replace in both places.
 
 Style (ja): です・ます調. Half-width alphanumerics, no space between Japanese and Latin text (e.g. `4D.Vector型`).
-Full-width `（）` and `：` in prose. First occurrence of a technical term: 日本語（English）.
+Full-width `（）` and `：` in prose. Do not append English equivalents unless needed to disambiguate;
+preserve code identifiers and quoted labels that must match the current UI.
+Cover (editor-approved): Japanese title, then `Elliott Jensen（4D Inc. テクニカルサービスエンジニア）`;
+omit the technical-note number from the Japanese cover only.
 
 ## 4D terms (from the official 4D Japanese documentation)
 
@@ -40,13 +43,13 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | method property | メソッドプロパティ | 4DのUI表記に合わせ、一般的なpropertyは「プロパティ」とします。 |
 | property / attribute | プロパティ / 属性 | 本文のpropertyとattributeを区別します。コマンド名や属性値は変更しません。 |
 | Explorer | エクスプローラー | 4D 20.8：`ExplorerJA.xlf`、`Explorer`（ID 1）。 |
-| Code Editor | コードエディター | メソッドを編集するエディター。 |
+| Code Editor | メソッドエディター | 編集者指定の用語。本文全体で統一します。 |
 | Method Properties | メソッドプロパティ | 4D 20.8：`ExplorerJA.xlf`、`Exp_MethodProperties`。原文の末尾の三点リーダーは画面に従います。 |
 | Edit Properties... | プロパティを編集... | 4D 20.8：`ExplorerMenusJA.xlf`、`exploProperties`（ID 56、5、93、112）。本文では操作名として「プロパティを編集」と表記します。 |
 | batch setting of attributes | 属性の一括設定 | 4D 20.8：`ExplorerMenusJA.xlf`、`exploBatch`（ID 57、94）の「属性の一括設定...」。ネイティブダイアログのタイトルはスクリーンショットの確認時に別途照合します。 |
 | preemptive | プリエンプティブ | 4D公式用語。属性値`capable`、`incapable`、`indifferent`は変更しません。 |
 | interpreted mode | インタープリターモード | 4D 20.8：`BuildAppJA.xlf`、`Build_App_Log_Interpreted`。コンパイル済みの実行モードと区別します。 |
-| standalone | スタンドアロン | ローカルの4Dでの実行。 |
+| standalone | シングルユーザー版 | 編集者指定の用語。ローカルの4Dでの実行。 |
 | Boolean | ブール型 | `True`と`False`は値として原文の表記を維持します。 |
 | filter | フィルター | メソッド一覧の絞り込み条件。 |
 | naming convention | 命名規則 | `Web`、`Web@`は例示文字列として変更しません。 |
@@ -58,12 +61,12 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
-| Method Properties Manager | Method Properties Manager | コンポーネントの固有名。原文のProperties Manager Component、Method Property Manager Componentもこの名前に統一します。 |
+| Method Properties Manager | メソッドプロパティマネージャー | 編集者指定の邦題。タイトルと本文で統一します。原文のProperties Manager Component、Method Property Manager Componentもこの名前に統一します。コード識別子や未確認のUI文字列は変更しません。 |
 | 4D / 4D Inc. | 4D / 4D Inc. | 製品名・会社名を維持します。 |
-| Elliott Jensen | Elliott Jensen | 著者名を維持します。肩書きは「テクニカルサービスエンジニア」と訳します。 |
-| Technical Note 24-12 | テクニカルノート24-12 | 文書番号を維持します。 |
+| Elliott Jensen | Elliott Jensen | 表紙の著者表記は「Elliott Jensen（4D Inc. テクニカルサービスエンジニア）」とします。 |
+| Technical Note 24-12 | 表紙では省略 | 編集者の承認により日本語の表紙から省略します。英語原文と元のPDFは変更しません。 |
 | Visual Studio Code | Visual Studio Code | 製品名を維持します。 |
 | Components / .4dbase / .4dm | Components / .4dbase / .4dm | フォルダー名・拡張子を維持します。 |
 | open_property_manager | open_property_manager | 実行するメソッドの識別子を維持します。 |
-| METHOD GET ATTRIBUTE / METHOD SET ATTRIBUTE | METHOD GET ATTRIBUTE / METHOD SET ATTRIBUTE | コマンド表記と参照URLは原文どおり。翻訳では綴りを修正しません。 |
+| METHOD GET ATTRIBUTE / METHOD SET ATTRIBUTE | METHOD GET ATTRIBUTE / METHOD SET ATTRIBUTE | コマンド表記は原文どおり。参照先は確認済みの現行日本語版`https://developer.4d.com/docs/ja/commands/method-get-attribute`と`https://developer.4d.com/docs/ja/commands/method-set-attribute`を使用します。 |
 | Web / Web@ | Web / Web@ | 命名規則と検索条件の例を維持します。 |

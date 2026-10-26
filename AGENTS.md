@@ -35,8 +35,9 @@ then; at release it is replaced (Phase 6).
 1. **Code is never translated.** Program code blocks in `src/<tgt>.md` must be byte-identical to `src/en.md`.
    `make check` enforces this. Only ```` ```text ```` blocks (sample values or output) may differ.
 2. **Never patch the PDF.** Always regenerate it from `src/` and `figures/` with `make`.
-3. **Keep `src/en.md` and `src/<tgt>.md` block-aligned:** same headings, paragraphs, code blocks and figures, in the
-   same order.
+3. **Keep the bodies of `src/en.md` and `src/<tgt>.md` block-aligned:** same headings, paragraphs, code blocks and
+   figures, in the same order. Editor-approved cover metadata changes are allowed: this Japanese edition omits
+   the technical-note number and uses the approved Japanese title and author byline. Leave the English source unchanged.
 4. **Never overwrite user edits.** Don't run `tools/extract.py --force` without asking. Don't regenerate `<tgt>` files.
    Before editing a file, re-read it: the user may have changed it since you last saw it.
 5. **Glossary first.** Terminology lives in `glossary.md`. When a term changes, update the glossary, then report and

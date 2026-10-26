@@ -108,6 +108,7 @@ monospace font for code instead of colours, `code.colors` can stay empty.
 ## Translation conventions
 
 - Translate paragraph by paragraph, keeping Markdown structure and order.
+- Keep body blocks aligned; editor-approved cover metadata changes do not require changing the English source.
 - Translate captions but keep `fig-NN`. Keep the fences of code blocks exactly as they are, language tag included.
 - Japanese:
   - です・ます調.
@@ -115,7 +116,14 @@ monospace font for code instead of colours, `code.colors` can stay empty.
   - Full-width `（）` and `：` in prose.
   - Use the official 4D Japanese documentation terms (e.g. Webエリア, エンティティセレクション, データストア, 引数,
     メソッド, フォーム, コレクション) and record them in `glossary.md` (`| English | 日本語 | Notes |`).
-  - First occurrence of a technical term: 日本語（English）.
+  - Do not automatically append English equivalents to technical terms. Include English only when necessary to
+    disambiguate; preserve identifiers and quoted UI labels that must match the current application.
+  - Use the editor-approved Japanese title in the cover and prose. This edition's cover byline is
+    `Elliott Jensen（4D Inc. テクニカルサービスエンジニア）`; omit `テクニカルノート24-12` from the cover.
+  - Use `シングルユーザー版` for standalone and `メソッドエディター` for Code Editor in narrative text.
+  - Prefer the verified equivalent Japanese page on `developer.4d.com` to legacy `doc.4d.com` documentation links.
+    For this note, use `/docs/ja/commands/method-get-attribute` and `/docs/ja/commands/method-set-attribute`.
+    Do not invent URL migrations or modify source-language references or program code.
 - Other languages: agree on the style with the user, and set the fonts (`figure_fonts`) and the font stack in
   `style/style.css`.
 - Inline code (`` `name` ``) stays as is. Identifiers in prose that refer to code stay in their original form.
