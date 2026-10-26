@@ -17,7 +17,7 @@ Else
 	$updated_col:=New collection:C1472()
 	$atr_o:=New object:C1471()
 	
-	For each ($method_name; Form:C1466.all_methods)
+	For each ($method_name; $all_methods)
 		
 		// Get the properties of the method and store it in $atr_o
 		$path:=METHOD Get path:C1164(Path project method:K72:1; $method_name)

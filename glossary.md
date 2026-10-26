@@ -54,8 +54,13 @@ omit the technical-note number from the Japanese cover only.
 | filter | フィルター | メソッド一覧の絞り込み条件。 |
 | naming convention | 命名規則 | `Web`、`Web@`は例示文字列として変更しません。 |
 | Execute / Execute Method | 実行 / メソッドを実行 | 4D 20.8：`ToolBarJA.xlf`の`TB_Execute`、`4DClientJA.xlf`の`common_STR#1029:1`と`:2`。 |
-| Apply / Remove | Apply / Remove | デモの現行ボタン名。本文では「適用」「解除」と意味を補足します。デモ側の承認済み翻訳ができるまでは画面の名称を置き換えません。 |
+| Apply / Remove | 適用 / 解除 | 承認済みのデモUIローカライズで使用するボタン名。英語の元スクリーンショットは、日本語版の確認が終わるまで変更しません。 |
 | capable / incapable / indifferent | capable / incapable / indifferent | プリエンプティブ属性の値。識別子として原文を維持します。 |
+| Capable / Incapable / Indifferent | 実行可 / 実行不可 / 指定なし | デモのプリエンプティブ属性を設定するボタン。保存する属性値は`capable`、`incapable`、`indifferent`のままです。 |
+| Any / Methods / Count | すべて / メソッド / メソッド数 | デモの一覧・フィルター用。内部の選択キーやメソッド名は翻訳しません。 |
+| Invisible / Shared | 非表示 / 共有 | デモのプロパティ選択肢。4D本体のダイアログは、対応するリソースを別途確認します。 |
+| Published Web / SOAP / WSDL / SQL | Web公開 / SOAP公開 / WSDL公開 / SQL公開 | デモのプロパティ選択肢。保存する属性名は変更しません。 |
+| Executed on Server | サーバー上で実行 | デモのプロパティ選択肢。 |
 
 ## Proper nouns in examples
 

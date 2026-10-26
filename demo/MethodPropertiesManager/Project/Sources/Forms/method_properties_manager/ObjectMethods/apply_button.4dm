@@ -5,25 +5,25 @@ $mod_obj:=New object:C1471()
 
 // Store in $mod_obj the property that needs to be set
 Case of 
-	: (Form:C1466.property_write.currentValue="Preemptive Capable")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Preemptive Capable")
 		$mod_obj.preemptive:="capable"
-	: (Form:C1466.property_write.currentValue="Preemptive Incapable")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Preemptive Incapable")
 		$mod_obj.preemptive:="incapable"
-	: (Form:C1466.property_write.currentValue="Preemptive Indifferent")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Preemptive Indifferent")
 		$mod_obj.preemptive:="indifferent"
-	: (Form:C1466.property_write.currentValue="Invisible")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Invisible")
 		$mod_obj.invisible:=True:C214
-	: (Form:C1466.property_write.currentValue="Published Web")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Published Web")
 		$mod_obj.publishedWeb:=True:C214
-	: (Form:C1466.property_write.currentValue="Published SOAP")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Published SOAP")
 		$mod_obj.publishedSoap:=True:C214
-	: (Form:C1466.property_write.currentValue="Published WSDL")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Published WSDL")
 		$mod_obj.publishedWsdl:=True:C214
-	: (Form:C1466.property_write.currentValue="Shared")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Shared")
 		$mod_obj.shared:=True:C214
-	: (Form:C1466.property_write.currentValue="Published SQL")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Published SQL")
 		$mod_obj.publishedSql:=True:C214
-	: (Form:C1466.property_write.currentValue="Executed on Server")
+	: (Form:C1466.property_write.keys[Form:C1466.property_write.index]="Executed on Server")
 		$mod_obj.executedOnServer:=True:C214
 End case 
 
@@ -34,4 +34,4 @@ For each ($method_name; Form:C1466.selected_methods)
 End for each 
 
 // update the display after the change
-Form:C1466.method_names:=update_display(Form:C1466.property_read.currentValue; Form:C1466.all_methods)
+Form:C1466.method_names:=update_display(Form:C1466.property_read.keys[Form:C1466.property_read.index]; Form:C1466.all_methods)

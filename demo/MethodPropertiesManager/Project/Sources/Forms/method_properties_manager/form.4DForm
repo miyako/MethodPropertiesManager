@@ -14,7 +14,7 @@
 	"events": [
 		"onLoad"
 	],
-	"windowTitle": "window title",
+	"windowTitle": ":xliff:MPM_WindowTitle",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -26,7 +26,7 @@
 					"type": "dropdown",
 					"left": 260,
 					"top": 42,
-					"width": 178,
+					"width": 300,
 					"height": 25,
 					"events": [
 						"onDataChange"
@@ -48,34 +48,34 @@
 						"onDataChange"
 					],
 					"dataSource": "Form:C1466.property_write",
-					"dataSourceTypeHint": "integer",
+					"dataSourceTypeHint": "object",
 					"method": "ObjectMethods/Popup Dropdown List1.4dm",
 					"fontFamily": "Arial",
 					"fontSize": 13
 				},
 				"Text1": {
 					"type": "text",
-					"text": "Show methods with this property:",
+					"text": ":xliff:MPM_FilterLabel",
 					"top": 23,
 					"left": 260,
-					"width": 222,
+					"width": 450,
 					"height": 16,
 					"fontFamily": "Arial",
 					"fontSize": 13
 				},
 				"Text2": {
 					"type": "text",
-					"text": "Edit this property of selected methods (Press Ctrl on Windows or Cmd on Mac to select multiple methods):",
-					"top": 104,
+					"text": ":xliff:MPM_EditLabel",
+					"top": 96,
 					"left": 260,
 					"width": 450,
-					"height": 31,
+					"height": 40,
 					"fontFamily": "Arial",
 					"fontSize": 13
 				},
 				"apply_button": {
 					"type": "button",
-					"text": "Apply",
+					"text": ":xliff:MPM_Apply",
 					"top": 140,
 					"left": 465,
 					"width": 80,
@@ -89,7 +89,7 @@
 				},
 				"Button2": {
 					"type": "button",
-					"text": "Close",
+					"text": ":xliff:CommonClose",
 					"top": 352,
 					"left": 665,
 					"width": 80,
@@ -128,7 +128,7 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Methods",
+								"text": ":xliff:MPM_Methods",
 								"name": "Header1",
 								"dataSource": "Form:C1466.column_sort",
 								"textAlign": "left",
@@ -147,7 +147,7 @@
 				},
 				"remove_button": {
 					"type": "button",
-					"text": "Remove",
+					"text": ":xliff:MPM_Remove",
 					"top": 140,
 					"left": 565,
 					"width": 80,
@@ -161,7 +161,7 @@
 				},
 				"capable_button": {
 					"type": "button",
-					"text": "Capable",
+					"text": ":xliff:MPM_Capable",
 					"top": 140,
 					"left": 465,
 					"width": 80,
@@ -176,7 +176,7 @@
 				},
 				"incapable_button": {
 					"type": "button",
-					"text": "Incapable",
+					"text": ":xliff:MPM_Incapable",
 					"top": 140,
 					"left": 565,
 					"width": 80,
@@ -191,7 +191,7 @@
 				},
 				"indifferent_button": {
 					"type": "button",
-					"text": "Indifferent",
+					"text": ":xliff:MPM_Indifferent",
 					"top": 139,
 					"left": 665,
 					"width": 80,
@@ -217,10 +217,10 @@
 				},
 				"Text3": {
 					"type": "text",
-					"text": "Count:",
+					"text": ":xliff:MPM_Count",
 					"top": 352,
-					"left": 117,
-					"width": 67,
+					"left": 22,
+					"width": 150,
 					"height": 16,
 					"fontSize": 18,
 					"fontFamily": "Arial"

@@ -13,4 +13,4 @@ For each ($method_name; Form:C1466.selected_methods)
 End for each 
 
 // update the display after the change
-Form:C1466.method_names:=update_display(Form:C1466.property_read.currentValue; Form:C1466.all_methods)
+Form:C1466.method_names:=update_display(Form:C1466.property_read.keys[Form:C1466.property_read.index]; Form:C1466.all_methods)
